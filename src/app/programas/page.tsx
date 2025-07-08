@@ -15,8 +15,8 @@ const programas = [
       "Arte marcial brasileira que desenvolve corpo, mente e cultura através de movimentos, música e tradição.",
     icone: Users,
     detalhes: {
-      idade: "A partir de 4 anos",
-      duracao: "1h30min por aula",
+      idade: "A partir de 3 anos",
+      duracao: "1h por aula",
       frequencia: "2x por semana",
       beneficios: ["Coordenação motora", "Disciplina", "Cultura brasileira", "Condicionamento físico"],
     },
@@ -33,7 +33,7 @@ const programas = [
       frequencia: "1x por semana",
       beneficios: ["Coordenação", "Criatividade", "Expressão", "Cultura musical"],
     },
-    imagem: "/cap-8.png?height=300&width=400",
+    imagem: "/music.jpeg?height=300&width=400",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const programas = [
       frequencia: "3-5x por semana",
       beneficios: ["Força muscular", "Emagrecimento", "Hipertrofia", "Saúde geral"],
     },
-    imagem: "/cap-4.jpeg?height=300&width=400",
+    imagem: "/fun4.jpeg",
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const programas = [
       frequencia: "2-3x por semana",
       beneficios: ["Desenvolvimento motor", "Socialização", "Autonomia", "Bem-estar"],
     },
-    imagem: "/img5.jpg?height=300&width=400",
+    imagem: "/img6.jpg?height=300&width=400",
   },
   {
     id: 5,
@@ -72,9 +72,49 @@ const programas = [
       frequencia: "2x por semana",
       beneficios: ["Flexibilidade", "Equilíbrio", "Socialização", "Qualidade de vida"],
     },
-    imagem: "/img23.jpg",
+    imagem: "/capo.png?height=300&width=400",
+  },
+  {
+    id: 6,
+    nome: "Jiu-Jitsu",
+    descricao: "Arte marcial focada em técnicas de imobilização e defesa pessoal, promovendo disciplina, força e autocontrole.",
+    icone: Users,
+    detalhes: {
+      idade: "A partir de 7 anos",
+      duracao: "1h por aula",
+      frequencia: "2x por semana",
+      beneficios: ["Autodefesa", "Resistência física", "Disciplina", "Concentração"],
+    },
+    imagem: "/jiu.jpeg?height=300&width=400",
+  },
+  {
+    id: 7,
+    nome: "Kickboxing",
+    descricao: "Modalidade que combina técnicas de luta e condicionamento físico com foco em agilidade, força e resistência.",
+    icone: Users,
+    detalhes: {
+      idade: "A partir de 50 anos",
+      duracao: "1h por aula",
+      frequencia: "2x por semana",
+      beneficios: ["Condicionamento físico", "Coordenação motora", "Agilidade", "Alívio do estresse"],
+    },
+    imagem: "/kick.jpeg?height=300&width=400",
+  },
+  {
+    id: 8,
+    nome: "Boxe",
+    descricao: "Treinamento técnico e físico com foco em golpes, defesa e estratégia. Indicado para todas as idades.",
+    icone: Users,
+    detalhes: {
+      idade: "A partir de 10 anos",
+      duracao: "1h por aula",
+      frequencia: "2x por semana",
+      beneficios: ["Força", "Reflexos", "Disciplina", "Saúde cardiovascular"],
+    },
+    imagem: "/boxe.jpeg?height=300&width=400",
   },
 ]
+
 
 export default function ProgramasPage() {
   return (
