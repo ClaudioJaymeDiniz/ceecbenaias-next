@@ -1,33 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
-import Link from "next/link";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Award, BookOpen, Users, Heart } from "lucide-react";
+import { Award, BookOpen, Users, Heart } from "lucide-react";
 
-import perfil from '@/assets/images/img9.jpg'
+import perfil from "@/assets/images/img9.jpg";
 import Footer from "@/components/footer/footer";
-import Logo from "@/components/ui/logo";
+
+import Header from "@/components/header/header";
 
 export default function ProfessorPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-100">
-        <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-            <ArrowLeft className="w-5 h-5 text-gray-600" />
-            <span className="text-gray-600">Voltar</span>
-          </Link>
-
-          <div className="flex items-center space-x-2">
-            <Logo />
-            <span className="text-xl font-bold text-gray-900">
-              CEEC Benaias
-            </span>
-          </div>
-        </nav>
-      </header>
+      <Header />
 
       {/* Hero */}
       <section className="py-16 bg-gradient-to-r from-red-600 to-red-950 text-white">
@@ -76,16 +63,18 @@ export default function ProfessorPage() {
 
               <p>
                 Como escritor, Rafael é autor de diversos artigos sobre inclusão
-                social através do esporte e criador do método <span className="font-bold">Capo&Vida</span>,
-                programa especialmente desenvolvido para mulheres e idosos que
-                busca promover qualidade de vida através da capoeira adaptada.
+                social através do esporte e criador do método{" "}
+                <span className="font-bold">Capo&Vida</span>, programa
+                especialmente desenvolvido para mulheres e idosos que busca
+                promover qualidade de vida através da capoeira adaptada.
               </p>
 
               <p>
-                Idealizador do curso <span className="font-bold">Transformando Vidas</span> , Rafael capacita
-                outros profissionais da área para trabalhar com metodologias
-                inclusivas, multiplicando o impacto positivo em comunidades por
-                todo o Vale do Paraíba.
+                Idealizador do curso{" "}
+                <span className="font-bold">Transformando Vidas</span> , Rafael
+                capacita outros profissionais da área para trabalhar com
+                metodologias inclusivas, multiplicando o impacto positivo em
+                comunidades por todo o Vale do Paraíba.
               </p>
 
               <p>

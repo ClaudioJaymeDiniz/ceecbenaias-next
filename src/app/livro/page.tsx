@@ -1,33 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
-import Link from "next/link";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
-
 
 import Footer from "@/components/footer/footer";
-import Logo from "@/components/ui/logo";
-import capalivro from "@/assets/images/capalivro.png"
+import capalivro from "@/assets/images/capalivro.png";
+import Header from "@/components/header/header";
 
 export default function LivroPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-100">
-        <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-            <ArrowLeft className="w-5 h-5 text-gray-600" />
-            <span className="text-gray-600">Voltar</span>
-          </Link>
-
-          <div className="flex items-center space-x-2">
-            <Logo />
-            <span className="text-xl font-bold text-gray-900">
-              CEEC Benaias
-            </span>
-          </div>
-        </nav>
-      </header>
+      <Header />
 
       {/* Hero */}
       <section className="py-16 bg-gradient-to-r from-red-600 to-red-950 text-white">
@@ -67,26 +51,22 @@ export default function LivroPage() {
 
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6 text-justify">
               <p>
-               Rafael Reis conheceu a dor cedo: rejeitado pela mãe, entregue à adoção, mergulhou nas drogas
-               e no crime ainda jovem. Quando tudo parecia perdido, o amor de Cristo o alcançou.
+                Rafael Reis conheceu a dor cedo: rejeitado pela mãe, entregue à
+                adoção, mergulhou nas drogas e no crime ainda jovem. Quando tudo
+                parecia perdido, o amor de Cristo o alcançou.
               </p>
+
+              <p>Esse rencontro mudou tudo.</p>
 
               <p>
-                Esse rencontro mudou tudo.
+                Hoje, através do Ministério Resgate e do esporte, Rafael dedica
+                sua vida a cuidar de quem um dia também foi esquecido - e já
+                impactou milhares de vidas.
               </p>
-
-              <p>
-                Hoje, através do Ministério Resgate e do esporte, Rafael dedica sua vida a cuidar de
-                quem um dia também foi esquecido - e já impactou milhares de vidas.
-              </p>
-
-             
             </div>
           </div>
         </div>
       </section>
-
-      
 
       {/* Filosofia */}
       <section className="py-16">
@@ -106,7 +86,6 @@ export default function LivroPage() {
         </div>
       </section>
 
-     
       <Footer />
     </div>
   );

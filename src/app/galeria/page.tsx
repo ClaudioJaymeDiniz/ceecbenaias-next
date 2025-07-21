@@ -1,8 +1,7 @@
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowLeft, Camera } from "lucide-react"
-import Logo from "@/components/ui/logo"
-import Footer from "@/components/footer/footer"
+import Image from "next/image";
+import { Camera } from "lucide-react";
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
 
 const fotos = [
   {
@@ -59,33 +58,23 @@ const fotos = [
     categoria: "Capoeira",
     imagem: "/img23.jpg?height=300&width=400",
   },
-]
+];
 
 export default function GaleriaPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-100">
-        <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-            <ArrowLeft className="w-5 h-5 text-gray-600" />
-            <span className="text-gray-600">Voltar</span>
-          </Link>
-
-          <div className="flex items-center space-x-2">
-            <Logo />
-            <span className="text-xl font-bold text-gray-900">CEEC Benaias</span>
-          </div>
-        </nav>
-      </header>
-
+      <Header />
       {/* Hero */}
       <section className="py-16 bg-gradient-to-r from-red-600 to-red-950 text-white">
         <div className="container mx-auto px-4 text-center">
           <Camera className="w-16 h-16 mx-auto mb-6" />
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Galeria de Fotos</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            Galeria de Fotos
+          </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Momentos especiais e atividades do CEEC Benaias capturados em imagens.
+            Momentos especiais e atividades do CEEC Benaias capturados em
+            imagens.
           </p>
         </div>
       </section>
@@ -109,7 +98,9 @@ export default function GaleriaPage() {
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-end">
                   <div className="p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     <h3 className="font-bold text-lg mb-1">{foto.titulo}</h3>
-                    <span className="text-sm bg-red-600 px-2 py-1 rounded">{foto.categoria}</span>
+                    <span className="text-sm bg-red-600 px-2 py-1 rounded">
+                      {foto.categoria}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -121,7 +112,9 @@ export default function GaleriaPage() {
       {/* Categorias */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Nossas Atividades</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            Nossas Atividades
+          </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <div className="text-center p-6 bg-white rounded-lg shadow-sm">
@@ -162,9 +155,12 @@ export default function GaleriaPage() {
       {/* CTA */}
       <section className="py-16 bg-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Faça parte da nossa história</h2>
+          <h2 className="text-3xl font-bold mb-6">
+            Faça parte da nossa história
+          </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Venha participar das nossas atividades e criar momentos especiais conosco.
+            Venha participar das nossas atividades e criar momentos especiais
+            conosco.
           </p>
           <button className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium transition-colors">
             Participe das nossas atividades
@@ -173,5 +169,5 @@ export default function GaleriaPage() {
       </section>
       <Footer />
     </div>
-  )
+  );
 }
