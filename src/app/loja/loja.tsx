@@ -4,10 +4,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ShoppingCart, ChevronLeft, ChevronRight  } from "lucide-react";
-import { useState } from "react";
-import { StaticImageData } from "next/image";
-
+import { ShoppingCart } from "lucide-react";
 import camisaPreta from "@/assets/images/loja/camisa-preta.jpg";
 import camisaBranca from "@/assets/images/loja/camisa-branca.jpg";
 import canecas from "@/assets/images/loja/canecas.jpg";
@@ -15,56 +12,48 @@ import canecas from "@/assets/images/loja/canecas.jpg";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 
-interface Produto {
-  id: number;
-  nome: string;
-  descricao: string;
-  preco: string;
-  imagens: StaticImageData[];
-}
-
-const produtos: Produto[] = [
+const produtos = [
   {
     id: 1,
     nome: "Camiseta CEEC Benaias",
     descricao: "Camiseta oficial do CEEC com logo bordado",
     preco: "R$ 45,00",
-    imagens: [camisaPreta],
+    imagem: camisaPreta,
   },
   {
     id: 2,
     nome: "Abadá de Capoeira",
     descricao: "Uniforme tradicional para práticas de capoeira",
     preco: "R$ 80,00",
-    imagens: [camisaBranca],    
+    imagem: camisaBranca,
   },
   {
     id: 3,
     nome: "Berimbau Artesanal",
     descricao: "Berimbau feito à mão por artesãos locais",
     preco: "R$ 150,00",
-    imagens: [canecas],
+    imagem: canecas,
   },
   {
     id: 4,
     nome: "Atabaque Pequeno",
     descricao: "Atabaque tradicional para roda de capoeira",
     preco: "R$ 120,00",
-    imagens: [canecas],  
+    imagem: canecas,
   },
   {
     id: 5,
     nome: "Pandeiro Profissional",
     descricao: "Pandeiro de alta qualidade para musicalização",
     preco: "R$ 90,00",
-    imagens: [camisaBranca],
+    imagem: camisaBranca,
   },
   {
     id: 6,
     nome: "Moleton Benaias",
     descricao: "Preto, Vermelho ou Branco",
     preco: "R$ 189,90",
-    imagens: [camisaPreta,camisaBranca]
+    imagem: camisaPreta,
   },
 ];
 
@@ -76,7 +65,6 @@ export default function LojaPage() {
     )}`;
     window.open(whatsappUrl, "_blank");
   };
-
 
   return (
     <div className="min-h-screen bg-white">
@@ -100,7 +88,37 @@ export default function LojaPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {produtos.map((produto) => (
-              <ProdutoCard key={produto.id} produto={produto} handleComprar={handleComprar} />
+              <Card
+                key={produto.id}
+                className="overflow-hidden border-2 border-gray-100 hover:border-red-200 transition-colors"
+              >
+                <div className="relative h-64">
+                  <Image
+                    src={produto.imagem || "/placeholder.svg"}
+                    alt={produto.nome}
+                    width={300}
+                    height={300}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {produto.nome}
+                  </h3>
+                  <p className="text-gray-600 mb-4">{produto.descricao}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-2xl font-bold text-red-600">
+                      {produto.preco}
+                    </span>
+                    <Button
+                      onClick={() => handleComprar(produto.nome)}
+                      className="bg-red-600 hover:bg-red-700 text-white"
+                    >
+                      Comprar
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
@@ -127,67 +145,5 @@ export default function LojaPage() {
       </section>
       <Footer />
     </div>
-  );
-}
-function ProdutoCard({ produto, handleComprar }: { produto: Produto; handleComprar: (nome: string) => void }) {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === produto.imagens.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? produto.imagens.length - 1 : prevIndex - 1
-    );
-  };
-
-  return (
-    <Card className="overflow-hidden border-2 border-gray-100 hover:border-red-200 transition-colors">
-      <div className="relative h-64">
-        <Image
-          src={produto.imagens[currentImageIndex] || "/placeholder.svg"}
-          alt={produto.nome}
-          width={300}
-          height={300}
-          className="w-full h-full object-cover"
-        />
-        {produto.imagens.length > 1 && (
-          <>
-            <Button
-              onClick={prevImage}
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/50 hover:bg-white/75 p-1 rounded-full"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </Button>
-            <Button
-              onClick={nextImage}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/50 hover:bg-white/75 p-1 rounded-full"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </Button>
-          </>
-        )}
-      </div>
-      <CardContent className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 mb-2">
-          {produto.nome}
-        </h3>
-        <p className="text-gray-600 mb-4">{produto.descricao}</p>
-        <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-red-600">
-            {produto.preco}
-          </span>
-          <Button
-            onClick={() => handleComprar(produto.nome)}
-            className="bg-red-600 hover:bg-red-700 text-white"
-          >
-            Comprar
-          </Button>
-        </div>
-      </CardContent>
-    </Card>
   );
 }
