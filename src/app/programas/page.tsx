@@ -170,19 +170,6 @@ export default function ProgramasPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      {/* <header className="bg-white shadow-sm border-b border-gray-100">
-        <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-            <ArrowLeft className="w-5 h-5 text-gray-600" />
-            <span className="text-gray-600">Voltar</span>
-          </Link>
-
-          <div className="flex items-center space-x-2">
-            <Logo />
-            <span className="text-xl font-bold text-gray-900">CEEC Benaias</span>
-          </div>
-        </nav>
-      </header> */}
 
       <Header />
 
@@ -303,9 +290,14 @@ export default function ProgramasPage() {
             Entre em contato conosco para mais informações sobre horários,
             valores e como participar.
           </p>
-          <Button className="bg-red-600 hover:bg-red-700 text-white">
-            Fale conosco
-          </Button>
+          <a
+            target="_blank"
+            href="https://wa.me/5512996466259?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20os%20programas%20do%20CEEC%20Benaias!"
+          >
+            <Button className="bg-red-600 hover:bg-red-700 text-white">
+              Fale conosco
+            </Button>
+          </a>
         </div>
       </section>
       <Footer />

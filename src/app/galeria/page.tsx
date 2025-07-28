@@ -162,9 +162,14 @@ export default function GaleriaPage() {
             Venha participar das nossas atividades e criar momentos especiais
             conosco.
           </p>
-          <button className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium transition-colors">
-            Participe das nossas atividades
-          </button>
+          <a
+            target="_blank"
+            href="https://wa.me/5512996466259?text=Ol%C3%A1%2C%20gostaria%20de%20participar%20das%20atividades%20do%20CEEC%20Benaias!"
+          >
+            <button className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium transition-colors">
+              Participe das nossas atividades
+            </button>
+          </a>
         </div>
       </section>
       <Footer />

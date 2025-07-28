@@ -28,9 +28,14 @@ export default function ProfessorPage() {
                 Educador físico, escritor e idealizador de projetos que unem
                 inclusão, esporte e desenvolvimento humano.
               </p>
-              <Button className="bg-white text-red-600 hover:bg-gray-100">
-                Entre em contato
-              </Button>
+              <a
+                target="_blank"
+                href="https://wa.me/5512996466259?text=Ol%C3%A1%2C%20Professor%20Rafael%20do%20CEEC%20Benaias!"
+              >
+                <Button className="bg-white text-red-600 hover:bg-gray-100">
+                  Entre em contato
+                </Button>
+              </a>
             </div>
             <div className="relative">
               <Image
@@ -199,9 +204,14 @@ export default function ProfessorPage() {
             Entre em contato para saber mais sobre os programas, metodologias e
             como participar das atividades do CEEC Benaias.
           </p>
-          <Button className="bg-white text-red-600 hover:bg-gray-100">
-            Fale com o Professor Rafael
-          </Button>
+          <a
+            target="_blank"
+            href="https://wa.me/5512996466259?text=Ol%C3%A1%2C%20Professor%20Rafael%20do%20CEEC%20Benaias!"
+          >
+            <Button className="bg-white text-red-600 hover:bg-gray-100">
+              Fale com o Professor Rafael
+            </Button>
+          </a>
         </div>
       </section>
       <Footer />

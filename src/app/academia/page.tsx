@@ -186,9 +186,14 @@ export default function AcademiaPage() {
             Venha conhecer nossa academia e descobrir como podemos ajudar você a
             alcançar seus objetivos.
           </p>
-          <button className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium transition-colors">
-            Agende uma visita
-          </button>
+          <a
+            target="_blank"
+            href="https://wa.me/5512996466259?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20ao%20CEEC%20Benaias!"
+          >
+            <button className="bg-white text-red-600 hover:bg-gray-100 px-8 py-3 rounded-md font-medium transition-colors">
+              Agende uma visita
+            </button>
+          </a>
         </div>
       </section>
       <Footer />

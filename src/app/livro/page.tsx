@@ -24,9 +24,14 @@ export default function LivroPage() {
               <p className="text-xl text-gray-200 mb-8">
                 Das drogas ao Esporte - Ministério Resgate
               </p>
-              <Button className="bg-white text-red-600 hover:bg-gray-100">
-                Adiquira o seu livro
-              </Button>
+              <a
+                target="_blank"
+                href="https://wa.me/5512996466259?text=Ol%C3%A1%2C%20gostaria%20de%20adiquirir%20uma%20cópia%20do%20livro!"
+              >
+                <Button className="bg-white text-red-600 hover:bg-gray-100">
+                  Adiquira o seu livro
+                </Button>
+              </a>
             </div>
             <div className="relative">
               <Image

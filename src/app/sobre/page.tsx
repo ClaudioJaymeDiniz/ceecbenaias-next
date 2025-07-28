@@ -115,9 +115,15 @@ export default function SobrePage() {
             Venha conhecer nossos programas e descobrir como podemos ajudar você
             ou sua família a alcançar uma vida mais plena e saudável.
           </p>
-          <Button className="bg-red-600 hover:bg-red-700 text-white">
-            Agende uma visita
-          </Button>
+          
+          <a
+            target="_blank"
+            href="https://wa.me/5512996466259?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20ao%20CEEC%20Benaias!"
+          >
+            <Button className="bg-red-600 hover:bg-red-700 text-white">
+              Agende uma visita
+            </Button>
+          </a>
         </div>
       </section>
       <Footer />

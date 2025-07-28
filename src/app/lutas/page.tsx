@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -141,11 +140,14 @@ export default function LutasPage() {
             Venha conhecer nossas aulas e descobrir qual modalidade combina mais
             com você.
           </p>
-          <Link href="/" className="inline-block">
+          <a
+            target="_blank"
+            href="https://wa.me/5512996466259?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20aula%20experimental%20no%20CEEC%20Benaias!"
+          >
             <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-md font-medium transition-colors">
               Agende uma aula experimental
             </button>
-          </Link>
+          </a>
         </div>
       </section>
       <Footer />

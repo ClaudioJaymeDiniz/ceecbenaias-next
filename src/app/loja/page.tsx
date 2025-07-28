@@ -4,7 +4,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ShoppingCart, ChevronLeft, ChevronRight  } from "lucide-react";
+import { ShoppingCart, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { StaticImageData } from "next/image";
 
@@ -36,7 +36,7 @@ const produtos: Produto[] = [
     nome: "Abadá de Capoeira",
     descricao: "Uniforme tradicional para práticas de capoeira",
     preco: "R$ 80,00",
-    imagens: [camisaBranca],    
+    imagens: [camisaBranca],
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ const produtos: Produto[] = [
     nome: "Atabaque Pequeno",
     descricao: "Atabaque tradicional para roda de capoeira",
     preco: "R$ 120,00",
-    imagens: [canecas],  
+    imagens: [canecas],
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ const produtos: Produto[] = [
     nome: "Moleton Benaias",
     descricao: "Preto, Vermelho ou Branco",
     preco: "R$ 189,90",
-    imagens: [camisaPreta,camisaBranca]
+    imagens: [camisaPreta, camisaBranca],
   },
 ];
 
@@ -76,7 +76,6 @@ export default function LojaPage() {
     )}`;
     window.open(whatsappUrl, "_blank");
   };
-
 
   return (
     <div className="min-h-screen bg-white">
@@ -100,7 +99,11 @@ export default function LojaPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {produtos.map((produto) => (
-              <ProdutoCard key={produto.id} produto={produto} handleComprar={handleComprar} />
+              <ProdutoCard
+                key={produto.id}
+                produto={produto}
+                handleComprar={handleComprar}
+              />
             ))}
           </div>
         </div>
@@ -129,7 +132,13 @@ export default function LojaPage() {
     </div>
   );
 }
-function ProdutoCard({ produto, handleComprar }: { produto: Produto; handleComprar: (nome: string) => void }) {
+function ProdutoCard({
+  produto,
+  handleComprar,
+}: {
+  produto: Produto;
+  handleComprar: (nome: string) => void;
+}) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
@@ -172,10 +181,8 @@ function ProdutoCard({ produto, handleComprar }: { produto: Produto; handleCompr
         )}
       </div>
       <CardContent className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 mb-2">
-          {produto.nome}
-        </h3>
-        <p className="text-gray-600 mb-4">{produto.descricao}</p>
+        <h3 className="text-xl font-bold text-gray-900 mb-2">{produto.nome}</h3>
+        <p className="text-gray-600 mb-4 h-10">{produto.descricao}</p>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-red-600">
             {produto.preco}

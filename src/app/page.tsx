@@ -46,13 +46,18 @@ export default function HomePage() {
                   Assista e descubra como o CEEC transforma vidas
                 </Button>
 
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-red-600 bg-transparent"
+                <a
+                  target="_blank"
+                  href="https://wa.me/5512996466259?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20ao%20CEEC%20Benaias!"
                 >
-                  Agende uma visita
-                </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-white text-white hover:bg-white hover:text-red-600 bg-transparent"
+                  >
+                    Agende uma visita
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="relative">
@@ -293,19 +298,25 @@ export default function HomePage() {
             Pronto para transformar sua vida com movimento e cuidado?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-white text-red-600 hover:bg-gray-100"
+            <a
+              target="_blank"
+              href="https://wa.me/5512996466259?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20aula%20experimental%20no%20CEEC%20Benaias!"
             >
-              Agende uma aula experimental
-            </Button>
-            <Button
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-red-600 bg-transparent"
+              >
+                Agende uma aula experimental
+              </Button>
+            </a>
+            {/* <Button
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-red-600 bg-transparent"
             >
               Fale com a gente no WhatsApp
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
