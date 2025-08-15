@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Users, Music, Dumbbell, Brain, Heart, X } from "lucide-react";
 import { useState } from "react";
 import perfil from "@/assets/images/img9.jpg";
-import hero from "@/assets/images/img2.jpg";
+import hero from "@/assets/images/logo-fundo.jpeg";
 import Footer from "@/components/footer/footer";
 
 import Header from "@/components/header/header";
