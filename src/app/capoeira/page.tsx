@@ -45,7 +45,7 @@ const lutas = [
     id: 4,
     nome: "Maculelê",
     descricao: "Dança folclórica brasileira que simula uma luta com bastões.",
-    imagem: "/cap-4.jpeg?height=300&width=400",
+    imagem: "/maculele.jpg?height=300&width=400",
     caracteristicas: ["Uso de bastões", "Dança folclórica", "Ritmo intenso"],
   },
 ];
@@ -60,7 +60,7 @@ export default function LutasPage() {
       <section className="py-16 bg-gradient-to-r from-red-600 to-red-950 text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-            Modalidades de Luta
+            Modalidades de Capoeira
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Conheça os diferentes estilos e modalidades que ensinamos no CEEC

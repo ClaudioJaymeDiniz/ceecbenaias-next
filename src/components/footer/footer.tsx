@@ -71,10 +71,10 @@ export default function Footer() {
                 Programas
               </Link>
               <Link
-                href="/lutas"
+                href="/capoeira"
                 className="block text-gray-400 hover:text-white transition-colors"
               >
-                Lutas
+                Capoeira
               </Link>
               <Link
                 href="/academia"

@@ -43,10 +43,10 @@ export default function Header() {
             Programas
           </Link>
           <Link
-            href="/lutas"
+            href="/capoeira"
             className="text-gray-700 hover:text-red-600 transition-colors"
           >
-            Lutas
+            Capoeira
           </Link>
 
           <Link
@@ -122,11 +122,11 @@ export default function Header() {
               Programas
             </Link>
             <Link
-              href="/lutas"
+              href="/capoeira"
               className="block text-gray-700 hover:text-red-600 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Lutas
+              Capoeira
             </Link>
             <Link
               href="/Academia"
