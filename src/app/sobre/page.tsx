@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Heart, Users } from "lucide-react";
 
-import sede from "@/assets/images/sede.jpg";
+import sede from "@/assets/images/sobrenos.jpg";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 
