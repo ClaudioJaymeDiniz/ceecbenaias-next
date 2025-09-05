@@ -38,82 +38,6 @@ const programas = [
   },
   {
     id: 2,
-    nome: "Musicalização e Cultura",
-    descricao:
-      "Desenvolvimento musical através de instrumentos tradicionais brasileiros e canto.",
-    icone: Music,
-    detalhes: {
-      idade: "A partir de 6 anos",
-      duracao: "1h por aula",
-      frequencia: "1x por semana",
-      beneficios: [
-        "Coordenação",
-        "Criatividade",
-        "Expressão",
-        "Cultura musical",
-      ],
-    },
-    imagem: "/music.jpeg?height=300&width=400",
-  },
-  {
-    id: 3,
-    nome: "Treinos personalizados de Musculação",
-    descricao:
-      "Programas personalizados de emagrecimento e hipertrofia com acompanhamento profissional.",
-    icone: Dumbbell,
-    detalhes: {
-      idade: "A partir de 12 anos",
-      duracao: "1h por treino",
-      frequencia: "3-5x por semana",
-      beneficios: [
-        "Força muscular",
-        "Emagrecimento",
-        "Hipertrofia",
-        "Saúde geral",
-      ],
-    },
-    imagem: "/fun4.jpeg",
-  },
-  {
-    id: 4,
-    nome: "Libras",
-    descricao:
-      "Agora temos curso de LIBRAS e aulas de Capoeira para Surdos.Um espaço de inclusão, cultura e movimento para todos!",
-    icone: Brain,
-    detalhes: {
-      idade: "Todas as idades",
-      duracao: "45min por sessão",
-      frequencia: "2-3x por semana",
-      beneficios: [
-        "Desenvolvimento motor",
-        "Socialização",
-        "Autonomia",
-        "Bem-estar",
-      ],
-    },
-    imagem: "/libras.jpg?height=300&width=400",
-  },
-  {
-    id: 5,
-    nome: "Capo&Vida",
-    descricao:
-      "Programa especial para mulheres e idosos focado em qualidade de vida e bem-estar. FUNCIONAL COM CIRCUITO",
-    icone: Heart,
-    detalhes: {
-      idade: "Sem limite de idade",
-      duracao: "1h por aula",
-      frequencia: "4x por semana",
-      beneficios: [
-        "Flexibilidade",
-        "Equilíbrio",
-        "Socialização",
-        "Qualidade de vida",
-      ],
-    },
-    imagem: "/capoevida-logo.png?height=300&width=400",
-  },
-  {
-    id: 6,
     nome: "Jiu-Jitsu",
     descricao:
       "Arte marcial focada em técnicas de imobilização e defesa pessoal, promovendo disciplina, força e autocontrole. TEMOS TURMAS ESPECIAIS PARA COMPETIÇÃO.",
@@ -132,7 +56,21 @@ const programas = [
     imagem: "/jiulogo.png?height=300&width=400",
   },
   {
-    id: 7,
+    id: 3,
+    nome: "Boxe",
+    descricao:
+      "Treinamento técnico e físico com foco em golpes, defesa e estratégia. Indicado para todas as idades.",
+    icone: Users,
+    detalhes: {
+      idade: "A partir de 7 anos",
+      duracao: "1h por aula",
+      frequencia: "Segunda à Sábado",
+      beneficios: ["Força", "Reflexos", "Disciplina", "Saúde cardiovascular"],
+    },
+    imagem: "/boxe.jpeg?height=300&width=400",
+  },
+  {
+    id: 4,
     nome: "Kickboxing",
     descricao:
       "Modalidade que combina técnicas de luta e condicionamento físico com foco em agilidade, força e resistência.",
@@ -151,19 +89,86 @@ const programas = [
     imagem: "/kick.jpeg?height=300&width=400",
   },
   {
-    id: 8,
-    nome: "Boxe",
+    id: 5,
+    nome: "Treinos personalizados de Musculação",
     descricao:
-      "Treinamento técnico e físico com foco em golpes, defesa e estratégia. Indicado para todas as idades.",
-    icone: Users,
+      "Programas personalizados de emagrecimento e hipertrofia com acompanhamento profissional.",
+    icone: Dumbbell,
     detalhes: {
-      idade: "A partir de 7 anos",
-      duracao: "1h por aula",
-      frequencia: "Segunda à Sábado",
-      beneficios: ["Força", "Reflexos", "Disciplina", "Saúde cardiovascular"],
+      idade: "A partir de 12 anos",
+      duracao: "1h por treino",
+      frequencia: "3-5x por semana",
+      beneficios: [
+        "Força muscular",
+        "Emagrecimento",
+        "Hipertrofia",
+        "Saúde geral",
+      ],
     },
-    imagem: "/boxe.jpeg?height=300&width=400",
+    imagem: "/fun4.jpeg",
   },
+  {
+    id: 6,
+    nome: "Libras",
+    descricao:
+      "Agora temos curso de LIBRAS e aulas de Capoeira para Surdos.Um espaço de inclusão, cultura e movimento para todos!",
+    icone: Brain,
+    detalhes: {
+      idade: "Todas as idades",
+      duracao: "45min por sessão",
+      frequencia: "2-3x por semana",
+      beneficios: [
+        "Desenvolvimento motor",
+        "Socialização",
+        "Autonomia",
+        "Bem-estar",
+      ],
+    },
+    imagem: "/libras.jpg?height=300&width=400",
+  },
+  {
+    id: 7,
+    nome: "Musicalização e Cultura",
+    descricao:
+      "Desenvolvimento musical através de instrumentos tradicionais brasileiros e canto.",
+    icone: Music,
+    detalhes: {
+      idade: "A partir de 6 anos",
+      duracao: "1h por aula",
+      frequencia: "1x por semana",
+      beneficios: [
+        "Coordenação",
+        "Criatividade",
+        "Expressão",
+        "Cultura musical",
+      ],
+    },
+    imagem: "/music.jpeg?height=300&width=400",
+  },
+  
+  
+  {
+    id: 8,
+    nome: "Capo&Vida",
+    descricao:
+      "Programa especial para mulheres e idosos focado em qualidade de vida e bem-estar. FUNCIONAL COM CIRCUITO",
+    icone: Heart,
+    detalhes: {
+      idade: "Sem limite de idade",
+      duracao: "1h por aula",
+      frequencia: "4x por semana",
+      beneficios: [
+        "Flexibilidade",
+        "Equilíbrio",
+        "Socialização",
+        "Qualidade de vida",
+      ],
+    },
+    imagem: "/capoevida-logo.png?height=300&width=400",
+  },
+  
+  
+  
 ];
 
 export default function ProgramasPage() {
