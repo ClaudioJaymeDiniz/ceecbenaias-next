@@ -77,15 +77,14 @@ export default function LivroPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            {/* <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Filosofia de Trabalho
-            </h2>
+            </h2> */}
 
             <blockquote className="text-2xl text-gray-700 italic mb-8 leading-relaxed">
-              "Acredito que cada pessoa tem potencial único para crescer e se
-              desenvolver. Meu papel é criar pontes entre limitações e
-              possibilidades, transformando desafios em oportunidades de
-              crescimento."
+              "Que este livro seja mais do que apenas uma leitura, mas sim uma
+              experiência que toque o seu coração e o leve a descobrir o
+              extraordinário poder da fé e do amor de Deus." - Rafael Reis.
             </blockquote>
           </div>
         </div>

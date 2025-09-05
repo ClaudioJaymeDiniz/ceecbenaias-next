@@ -21,12 +21,12 @@ const programas = [
     id: 1,
     nome: "Capoeira para todas as idades",
     descricao:
-      "Arte marcial brasileira que desenvolve corpo, mente e cultura através de movimentos, música e tradição.",
+      "Arte marcial brasileira que desenvolve corpo, mente e cultura através de movimentos, música e tradição. Infatil, juvenil e adulto.",
     icone: Users,
     detalhes: {
       idade: "A partir de 3 anos",
       duracao: "1h por aula",
-      frequencia: "2x por semana",
+      frequencia: "Planos 1,2 e 3x por semana",
       beneficios: [
         "Coordenação motora",
         "Disciplina",
@@ -57,12 +57,12 @@ const programas = [
   },
   {
     id: 3,
-    nome: "Musculação",
+    nome: "Treinos personalizados de Musculação",
     descricao:
       "Programas personalizados de emagrecimento e hipertrofia com acompanhamento profissional.",
     icone: Dumbbell,
     detalhes: {
-      idade: "A partir de 16 anos",
+      idade: "A partir de 12 anos",
       duracao: "1h por treino",
       frequencia: "3-5x por semana",
       beneficios: [
@@ -76,9 +76,9 @@ const programas = [
   },
   {
     id: 4,
-    nome: "Atendimentos Especializados",
+    nome: "Libras",
     descricao:
-      "Suporte para pessoas com autismo e síndromes através de metodologia inclusiva e personalizada.",
+      "Agora temos curso de LIBRAS e aulas de Capoeira para Surdos.Um espaço de inclusão, cultura e movimento para todos!",
     icone: Brain,
     detalhes: {
       idade: "Todas as idades",
@@ -91,18 +91,18 @@ const programas = [
         "Bem-estar",
       ],
     },
-    imagem: "/img6.jpg?height=300&width=400",
+    imagem: "/libras.jpg?height=300&width=400",
   },
   {
     id: 5,
     nome: "Capo&Vida",
     descricao:
-      "Programa especial para mulheres e idosos focado em qualidade de vida e bem-estar.",
+      "Programa especial para mulheres e idosos focado em qualidade de vida e bem-estar. FUNCIONAL COM CIRCUITO",
     icone: Heart,
     detalhes: {
-      idade: "A partir de 50 anos",
+      idade: "Sem limite de idade",
       duracao: "1h por aula",
-      frequencia: "2x por semana",
+      frequencia: "4x por semana",
       beneficios: [
         "Flexibilidade",
         "Equilíbrio",
@@ -110,16 +110,16 @@ const programas = [
         "Qualidade de vida",
       ],
     },
-    imagem: "/capo.png?height=300&width=400",
+    imagem: "/capoevida-logo.png?height=300&width=400",
   },
   {
     id: 6,
     nome: "Jiu-Jitsu",
     descricao:
-      "Arte marcial focada em técnicas de imobilização e defesa pessoal, promovendo disciplina, força e autocontrole.",
+      "Arte marcial focada em técnicas de imobilização e defesa pessoal, promovendo disciplina, força e autocontrole. TEMOS TURMAS ESPECIAIS PARA COMPETIÇÃO.",
     icone: Users,
     detalhes: {
-      idade: "A partir de 7 anos",
+      idade: "A partir de 3 anos",
       duracao: "1h por aula",
       frequencia: "2x por semana",
       beneficios: [
@@ -129,7 +129,7 @@ const programas = [
         "Concentração",
       ],
     },
-    imagem: "/jiu.jpeg?height=300&width=400",
+    imagem: "/jiulogo.png?height=300&width=400",
   },
   {
     id: 7,
@@ -138,9 +138,9 @@ const programas = [
       "Modalidade que combina técnicas de luta e condicionamento físico com foco em agilidade, força e resistência.",
     icone: Users,
     detalhes: {
-      idade: "A partir de 50 anos",
+      idade: "A partir de 7 anos",
       duracao: "1h por aula",
-      frequencia: "2x por semana",
+      frequencia: "Segunda à Sábado",
       beneficios: [
         "Condicionamento físico",
         "Coordenação motora",
@@ -157,9 +157,9 @@ const programas = [
       "Treinamento técnico e físico com foco em golpes, defesa e estratégia. Indicado para todas as idades.",
     icone: Users,
     detalhes: {
-      idade: "A partir de 10 anos",
+      idade: "A partir de 7 anos",
       duracao: "1h por aula",
-      frequencia: "2x por semana",
+      frequencia: "Segunda à Sábado",
       beneficios: ["Força", "Reflexos", "Disciplina", "Saúde cardiovascular"],
     },
     imagem: "/boxe.jpeg?height=300&width=400",

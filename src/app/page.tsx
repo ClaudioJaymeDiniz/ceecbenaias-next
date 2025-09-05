@@ -110,7 +110,7 @@ export default function HomePage() {
                   Capoeira para todas as idades
                 </h3>
                 <p className="text-gray-600">
-                  Arte marcial brasileira que desenvolve corpo, mente e cultura
+                  Arte marcial brasileira que desenvolve corpo, mente e cultura.
                 </p>
               </CardContent>
             </Card>
@@ -123,7 +123,7 @@ export default function HomePage() {
                 </h3>
                 <p className="text-gray-600">
                   Desenvolvimento musical e cultural através da tradição
-                  brasileira
+                  brasileira.
                 </p>
               </CardContent>
             </Card>
@@ -132,10 +132,10 @@ export default function HomePage() {
               <CardContent className="p-6 text-center">
                 <Dumbbell className="w-12 h-12 text-red-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Musculação
+                  Treinos personalizados de Musculação
                 </h3>
                 <p className="text-gray-600">
-                  Programas de emagrecimento e hipertrofia personalizados
+                  Programas de emagrecimento e hipertrofia personalizados.
                 </p>
               </CardContent>
             </Card>
@@ -143,11 +143,10 @@ export default function HomePage() {
             <Card className="border-2 border-gray-100 hover:border-red-200 transition-colors">
               <CardContent className="p-6 text-center">
                 <Brain className="w-12 h-12 text-red-600 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Atendimentos especializados
-                </h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Libras</h3>
                 <p className="text-gray-600">
-                  Suporte para autismo e síndromes com metodologia inclusiva
+                  Agora temos curso de LIBRAS e aulas de Capoeira para Surdos.Um
+                  espaço de inclusão, cultura e movimento para todos!
                 </p>
               </CardContent>
             </Card>
@@ -160,7 +159,7 @@ export default function HomePage() {
                 </h3>
                 <p className="text-gray-600">
                   Arte marcial voltada à defesa pessoal, disciplina e
-                  desenvolvimento físico e mental
+                  desenvolvimento físico e mental.
                 </p>
               </CardContent>
             </Card>
@@ -173,7 +172,7 @@ export default function HomePage() {
                 </h3>
                 <p className="text-gray-600">
                   Combinação de técnicas de luta e exercícios físicos que
-                  melhora agilidade e resistência
+                  melhora agilidade e resistência.
                 </p>
               </CardContent>
             </Card>
@@ -184,7 +183,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Boxe</h3>
                 <p className="text-gray-600">
                   Treinamento técnico e físico que desenvolve força, foco e
-                  saúde cardiovascular
+                  saúde cardiovascular.
                 </p>
               </CardContent>
             </Card>
@@ -197,7 +196,7 @@ export default function HomePage() {
                 </h3>
                 <p className="text-gray-600">
                   Programa especial para mulheres e idosos focado em qualidade
-                  de vida
+                  de vida.
                 </p>
               </CardContent>
             </Card>
