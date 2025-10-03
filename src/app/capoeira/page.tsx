@@ -45,7 +45,7 @@ const lutas = [
     id: 4,
     nome: "Maculelê",
     descricao: "Dança folclórica brasileira que simula uma luta com bastões.",
-    imagem: "/maculele.jpg?height=300&width=400",
+    imagem: "/maculelee.png?height=300&width=400",
     caracteristicas: ["Uso de bastões", "Dança folclórica", "Ritmo intenso"],
   },
 ];

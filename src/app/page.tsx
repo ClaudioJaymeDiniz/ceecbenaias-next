@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Users, Music, Dumbbell, Brain, Heart, X } from "lucide-react";
 import { useState } from "react";
 import perfil from "@/assets/images/img9.jpg";
-import hero from "@/assets/images/capa-hero.jpg";
+import hero from "@/assets/images/capa-hero2.png";
 import Footer from "@/components/footer/footer";
 
 import Header from "@/components/header/header";
@@ -23,9 +23,9 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-red-600 to-red-950 text-white py-20 lg:py-32">
+      <section className="relative bg-gradient-to-r from-red-600 to-red-950 text-white py-6 lg:py-20 ">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                 Movimento que <span className="text-red-300">transforma</span>.
@@ -71,6 +71,94 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        {/* Seção de Parceiros */}
+        <div className="mt-16 pt-8 border-t border-red-400/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-white mb-2">
+                Parceiros Aceitos
+              </h3>
+              <p className="text-red-200">
+                Facilitamos seu acesso ao bem-estar através de nossos parceiros
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {/* Gympass */}
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
+                <CardContent className="p-6 text-center ">
+                  
+                  <h4 className="text-xl font-bold text-white">GYMPASS</h4>
+                 
+                </CardContent>
+              </Card>
+
+              {/* Totalpass */}
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
+                <CardContent className="p-6 text-center">
+                  
+                  <h4 className="text-xl font-bold text-white">TOTALPASS</h4>
+                 
+                </CardContent>
+              </Card>
+
+              {/* Gurupass */}
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
+                <CardContent className="p-6 text-center">
+                  
+                  <h4 className="text-xl font-bold text-white">GURUPASS</h4>
+                  
+                </CardContent>
+              </Card>
+
+               {/* Gympass */}
+              {/* <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Dumbbell className="w-8 h-8 text-red-600" />
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-2">GYMPASS</h4>
+                  <p className="text-red-200 text-sm">
+                    Acesso facilitado através da plataforma Gympass
+                  </p>
+                </CardContent>
+              </Card> */}
+
+              {/* Totalpass */}
+              {/* <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Heart className="w-8 h-8 text-red-600" />
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-2">TOTALPASS</h4>
+                  <p className="text-red-200 text-sm">
+                    Bem-estar completo com benefícios Totalpass
+                  </p>
+                </CardContent>
+              </Card> */}
+
+              {/* Gurupass */}
+              {/* <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Brain className="w-8 h-8 text-red-600" />
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-2">GURUPASS</h4>
+                  <p className="text-red-200 text-sm">
+                    Desenvolvimento pessoal através do Gurupass
+                  </p>
+                </CardContent>
+              </Card> */}
+            </div>
+            
+            <div className="text-center mt-8">
+              <p className="text-red-200 text-sm">
+                Entre em contato para saber mais sobre como utilizar seus benefícios
+              </p>
+            </div>
+          </div>
+        </div>
+        
       </section>
 
       {/* Sobre Nós */}
@@ -218,16 +306,16 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto">
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-64 md:h-full">
+                <div className="relative h-80 sm:h-96 md:h-full">
                   <Image
                     src={perfil}
                     alt="Professor Rafael"
                     width={400}
                     height={400}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
-                <CardContent className="p-8 flex flex-col justify-center">
+                <CardContent className="p-6 sm:p-8 flex flex-col justify-center">
                   <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
                     Professor Rafael
                   </h2>

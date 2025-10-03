@@ -124,7 +124,7 @@ const programas = [
         "Bem-estar",
       ],
     },
-    imagem: "/libras.jpg?height=300&width=400",
+    imagem: "/librass.png?height=300&width=400",
   },
   {
     id: 7,
@@ -208,7 +208,7 @@ export default function ProgramasPage() {
                     }`}
                   >
                     <div
-                      className={`relative h-64 lg:h-full ${
+                      className={`relative min-h-[280px] sm:min-h-[320px] lg:h-full ${
                         index % 2 === 1 ? "lg:col-start-2" : ""
                       }`}
                     >
@@ -217,11 +217,11 @@ export default function ProgramasPage() {
                         alt={programa.nome}
                         width={400}
                         height={300}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain bg-gray-50"
                       />
                     </div>
                     <CardContent
-                      className={`p-8 flex flex-col justify-center ${
+                      className={`p-6 sm:p-8 flex flex-col justify-center ${
                         index % 2 === 1 ? "lg:col-start-1" : ""
                       }`}
                     >
