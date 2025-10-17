@@ -88,7 +88,7 @@ export default function HomePage() {
               <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
                 <CardContent className="p-6 text-center ">
                   
-                  <h4 className="text-xl font-bold text-white">GYMPASS</h4>
+                  <h4 className="text-xl font-bold text-white">WELLHUB</h4>
                  
                 </CardContent>
               </Card>
