@@ -10,7 +10,7 @@ const lutas = [
     nome: "Capoeira Angola",
     descricao:
       "Estilo tradicional da capoeira, mais próximo ao chão, com movimentos lentos e ritualizados.",
-    imagem: "/cap-4.jpeg?height=300&width=400",
+    imagem: "/angola.jpg?height=300&width=400",
     caracteristicas: [
       "Movimentos lentos",
       "Jogo próximo ao chão",
@@ -22,7 +22,7 @@ const lutas = [
     nome: "Capoeira Regional",
     descricao:
       "Estilo criado por Mestre Bimba, com movimentos mais rápidos e acrobáticos.",
-    imagem: "/cap-4.jpeg?height=300&width=400",
+    imagem: "/cap-12.jpeg?height=300&width=400",
     caracteristicas: [
       "Movimentos rápidos",
       "Acrobacias",
@@ -34,7 +34,7 @@ const lutas = [
     nome: "Capoeira Contemporânea",
     descricao:
       "Fusão dos estilos Angola e Regional, adaptada para os tempos modernos.",
-    imagem: "/cap-4.jpeg?height=300&width=400",
+    imagem: "/contemporanea.png?height=300&width=400",
     caracteristicas: [
       "Versatilidade",
       "Adaptação moderna",

@@ -8,22 +8,22 @@ const equipamentos = [
   {
     nome: "Estação de Musculação",
     descricao: "Equipamento completo para treino de força",
-    imagem: "/cap-8.png?height=250&width=350",
+    imagem: "/academia/academia1.jpg?height=250&width=350",
   },
   {
     nome: "Halteres e Anilhas",
     descricao: "Diversos pesos para treinos personalizados",
-    imagem: "/cap-8.png?height=250&width=350",
+    imagem: "/academia/academia2.jpg?height=250&width=350",
   },
   {
     nome: "Esteiras e Bikes",
     descricao: "Equipamentos para exercícios cardiovasculares",
-    imagem: "/cap-8.png?height=250&width=350",
+    imagem: "/academia/academia3.jpg?height=250&width=350",
   },
   {
     nome: "Área de Alongamento",
     descricao: "Espaço dedicado para aquecimento e relaxamento",
-    imagem: "/cap-8.png?height=250&width=350",
+    imagem: "/academia/academia4.jpg?height=250&width=350",
   },
 ];
 
@@ -80,7 +80,7 @@ export default function AcademiaPage() {
             </div>
             <div>
               <Image
-                src="/cap-12.jpeg?height=400&width=500"
+                src="/academia/principal.jpg?height=400&width=500"
                 alt="Academia CEEC"
                 width={500}
                 height={400}
