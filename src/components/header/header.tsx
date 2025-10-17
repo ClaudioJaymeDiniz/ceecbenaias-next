@@ -129,7 +129,7 @@ export default function Header() {
               Capoeira
             </Link>
             <Link
-              href="/Academia"
+              href="/academia"
               className="block text-gray-700 hover:text-red-600 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
