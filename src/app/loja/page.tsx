@@ -8,14 +8,19 @@ import { ShoppingCart, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { StaticImageData } from "next/image";
 
-import camisaPreta from "@/assets/images/loja/camisa-preta.jpg";
+import camisaRosa from "@/assets/images/loja/camisa-preta.jpg";
+import camisaVerde from "@/assets/images/loja/camisa-verde.jpg";
+
 import camisaCalca from "@/assets/images/loja/camisa-calca.jpg";
 
 import moletonPreto from "@/assets/images/loja/meleton-preto.jpg";
 import moletonBranco from "@/assets/images/loja/moleton-branco.jpg";
 import moletonVermelho from "@/assets/images/loja/moleton-vermelho.jpg";
+import conjunto from "@/assets/images/loja/conjunto.jpg";
 
 import canecas from "@/assets/images/loja/canecas.jpg";
+import canecaBranca from "@/assets/images/loja/caneca-branca.jpg";
+
 import funcional from "@/assets/images/loja/funcional.jpg";
 
 import coquinho from "@/assets/images/loja/coquinho.jpg";
@@ -36,38 +41,39 @@ interface Produto {
 const produtos: Produto[] = [
   {
     id: 1,
-    nome: "Camiseta CEEC Benaias",
-    descricao: "Camiseta oficial do CEEC com logo bordado",
-    preco: "R$ 45,00",
-    imagens: [camisaPreta],
+    nome: "Camiseta Funcional",
+    descricao: "Camiseta Capo&Vida preta",
+    preco: "R$ 75,00",
+    imagens: [camisaRosa, camisaVerde],
   },
   {
     id: 2,
     nome: "Abadá de Capoeira",
-    descricao: "Uniforme tradicional para práticas de capoeira",
-    preco: "R$ 80,00",
+    descricao: "Uniforme tradicional para práticas de capoeira. Até tamanho G",
+    preco: "R$ 290,00",
     imagens: [camisaCalca],
   },
   {
     id: 3,
-    nome: "Berimbau Artesanal",
-    descricao: "Berimbau feito à mão por artesãos locais",
-    preco: "R$ 150,00",
-    imagens: [canecas],
+    nome: "Canecas",
+    descricao: "Canecas branca e preta.",
+    preco: "R$ 55,00 / 65,00",
+    imagens: [canecas, canecaBranca],
   },
   {
     id: 4,
-    nome: "Atabaque Pequeno",
-    descricao: "Atabaque tradicional para roda de capoeira",
-    preco: "R$ 120,00",
+    nome: "Camiseta Funcional",
+    descricao: "Camiseta Capo&Vida branca.",
+    preco: "R$ 65,00",
     imagens: [funcional],
   },
+  
   {
     id: 5,
-    nome: "Pandeiro Profissional",
-    descricao: "Pandeiro de alta qualidade para musicalização",
-    preco: "R$ 90,00",
-    imagens: [camisaCalca],
+    nome: "Conjunto Moleton Benais",
+    descricao: "Conjunto de moleton e calça BENAIAS",
+    preco: "R$ 300,00",
+    imagens: [conjunto],
   },
   {
     id: 6,
@@ -78,22 +84,22 @@ const produtos: Produto[] = [
   },
   {
     id: 7,
-    nome: "Coquinho",
-    descricao: "Preto, Vermelho ou Branco",
+    nome: "Agogô",
+    descricao: "Agogô tradicional para capoeira",
     preco: "R$ 150,00",
     imagens: [coquinho],
   },
   {
     id: 8,
     nome: "Pandeiro",
-    descricao: "Preto, Vermelho ou Branco",
+    descricao: "Pandeiro para musicalização",
     preco: "R$ 180,90",
     imagens: [pandeiro],
   },
   {
     id: 9,
     nome: "Berimbau",
-    descricao: "Preto, Vermelho ou Branco",
+    descricao: "Berimbau tradicional para capoeira",
     preco: "R$ 200,00",
     imagens: [berimbau],
   },
