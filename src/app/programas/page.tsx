@@ -21,7 +21,7 @@ const programas = [
     id: 1,
     nome: "Capoeira para todas as idades",
     descricao:
-      "Arte marcial brasileira que desenvolve corpo, mente e cultura através de movimentos, música e tradição. Infatil, juvenil e adulto.",
+      "Arte marcial brasileira que desenvolve corpo, mente e cultura através de movimentos, música e tradição. Infantil, juvenil e adulto.",
     icone: Users,
     detalhes: {
       idade: "A partir de 3 anos",
@@ -40,54 +40,55 @@ const programas = [
     id: 2,
     nome: "Jiu-Jitsu",
     descricao:
-      "Arte marcial focada em técnicas de imobilização e defesa pessoal, promovendo disciplina, força e autocontrole. TEMOS TURMAS ESPECIAIS PARA COMPETIÇÃO.",
+      "Treinos rápidos, intensos e eficientes! O IRON30 foi criado para quem quer resultado sem perder tempo. Em apenas 30 minutos você melhora condicionamento, força, mobilidade e queima calorias de forma inteligente. Movimentos funcionais, alta energia e evoluçãoa cada aula",
     icone: Users,
     detalhes: {
       idade: "A partir de 3 anos",
       duracao: "1h por aula",
       frequencia: "2x por semana",
       beneficios: [
-        "Autodefesa",
-        "Resistência física",
+        "Emagrecimento",
+        "Força",
         "Disciplina",
-        "Concentração",
+        "Condicionamento Físico",
       ],
     },
-    imagem: "/jiulogo.png?height=300&width=400",
+    imagem: "/jiujitsu.png?height=300&width=400",
   },
   {
     id: 3,
-    nome: "Boxe",
+    nome: "IRON30",
     descricao:
       "Treinamento técnico e físico com foco em golpes, defesa e estratégia. Indicado para todas as idades.",
     icone: Users,
     detalhes: {
-      idade: "A partir de 7 anos",
-      duracao: "1h por aula",
-      frequencia: "Segunda à Sábado",
+      idade: "A partir de 10 anos",
+      duracao: "30min por aula",
+      frequencia: "3x semana",
       beneficios: ["Força", "Reflexos", "Disciplina", "Saúde cardiovascular"],
     },
-    imagem: "/boxe.jpeg?height=300&width=400",
+    imagem: "/iron30.jpeg?height=300&width=400",
   },
   {
     id: 4,
-    nome: "Kickboxing",
+    nome: "Capo&Vida",
     descricao:
-      "Modalidade que combina técnicas de luta e condicionamento físico com foco em agilidade, força e resistência.",
-    icone: Users,
+      "Programa especial para mulheres e idosos focado em qualidade de vida e bem-estar. FUNCIONAL COM CIRCUITO",
+    icone: Heart,
     detalhes: {
-      idade: "A partir de 7 anos",
+      idade: "Sem limite de idade",
       duracao: "1h por aula",
-      frequencia: "Segunda à Sábado",
+      frequencia: "4x por semana",
       beneficios: [
-        "Condicionamento físico",
-        "Coordenação motora",
-        "Agilidade",
-        "Alívio do estresse",
+        "Flexibilidade",
+        "Equilíbrio",
+        "Socialização",
+        "Qualidade de vida",
       ],
     },
-    imagem: "/kick.jpeg?height=300&width=400",
+    imagem: "/capoevida-logo.png?height=300&width=400",
   },
+  
   {
     id: 5,
     nome: "Treinos personalizados de Musculação",
@@ -147,25 +148,7 @@ const programas = [
   },
   
   
-  {
-    id: 8,
-    nome: "Capo&Vida",
-    descricao:
-      "Programa especial para mulheres e idosos focado em qualidade de vida e bem-estar. FUNCIONAL COM CIRCUITO",
-    icone: Heart,
-    detalhes: {
-      idade: "Sem limite de idade",
-      duracao: "1h por aula",
-      frequencia: "4x por semana",
-      beneficios: [
-        "Flexibilidade",
-        "Equilíbrio",
-        "Socialização",
-        "Qualidade de vida",
-      ],
-    },
-    imagem: "/capoevida-logo.png?height=300&width=400",
-  },
+  
   
   
   

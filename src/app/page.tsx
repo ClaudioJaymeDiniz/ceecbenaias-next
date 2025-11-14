@@ -252,31 +252,19 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100 hover:border-red-200 transition-colors">
-              <CardContent className="p-6 text-center">
-                <Users className="w-12 h-12 text-red-600 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Kickboxing
-                </h3>
-                <p className="text-gray-600">
-                  Combinação de técnicas de luta e exercícios físicos que
-                  melhora agilidade e resistência.
-                </p>
-              </CardContent>
-            </Card>
+            
 
             <Card className="border-2 border-gray-100 hover:border-red-200 transition-colors">
               <CardContent className="p-6 text-center">
                 <Users className="w-12 h-12 text-red-600 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Boxe</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">IRON30</h3>
                 <p className="text-gray-600">
-                  Treinamento técnico e físico que desenvolve força, foco e
-                  saúde cardiovascular.
+                  30 minutos de treino para emagrecimento e condicionamento físico.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100 hover:border-red-200 transition-colors lg:col-span-2">
+            <Card className="border-2 border-gray-100 hover:border-red-200 transition-colors lg:col-span-3">
               <CardContent className="p-6 text-center">
                 <Heart className="w-12 h-12 text-red-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">

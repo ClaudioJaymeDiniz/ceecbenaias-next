@@ -6,19 +6,19 @@ import Header from "@/components/header/header";
 
 const equipamentos = [
   {
-    nome: "Estação de Musculação",
-    descricao: "Equipamento completo para treino de força",
-    imagem: "/academia/academia1.jpg?height=250&width=350",
+    nome: "Loja",
+    descricao: "Loja completa com roupas, equipamentos e suplementos para todas as suas necessidades de treino.",
+    imagem: "/academia/loja.jpg?height=250&width=350",
   },
   {
-    nome: "Halteres e Anilhas",
-    descricao: "Diversos pesos para treinos personalizados",
-    imagem: "/academia/academia2.jpg?height=250&width=350",
+    nome: "Equipamentos",
+    descricao: "Equipamentos voltados para treinamento funcional e preparação física de alta performance.",
+    imagem: "/academia/equipamentos.jpg?height=250&width=350",
   },
   {
-    nome: "Esteiras e Bikes",
-    descricao: "Equipamentos para exercícios cardiovasculares",
-    imagem: "/academia/academia3.jpg?height=250&width=350",
+    nome: "Área Academia",
+    descricao: "Espaço de academia totalmente equipado para lutas, com estrutura segura e profissional.",
+    imagem: "/academia/area.jpg?height=250&width=350",
   },
   {
     nome: "Área de Alongamento",

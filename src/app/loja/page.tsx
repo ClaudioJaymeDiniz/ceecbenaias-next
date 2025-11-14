@@ -9,8 +9,18 @@ import { useState } from "react";
 import { StaticImageData } from "next/image";
 
 import camisaPreta from "@/assets/images/loja/camisa-preta.jpg";
-import camisaBranca from "@/assets/images/loja/camisa-branca.jpg";
+import camisaCalca from "@/assets/images/loja/camisa-calca.jpg";
+
+import moletonPreto from "@/assets/images/loja/meleton-preto.jpg";
+import moletonBranco from "@/assets/images/loja/moleton-branco.jpg";
+import moletonVermelho from "@/assets/images/loja/moleton-vermelho.jpg";
+
 import canecas from "@/assets/images/loja/canecas.jpg";
+import funcional from "@/assets/images/loja/funcional.jpg";
+
+import coquinho from "@/assets/images/loja/coquinho.jpg";
+import pandeiro from "@/assets/images/loja/pandeiro.jpg";
+import berimbau from "@/assets/images/loja/berimbau.jpg";
 
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
@@ -36,7 +46,7 @@ const produtos: Produto[] = [
     nome: "Abadá de Capoeira",
     descricao: "Uniforme tradicional para práticas de capoeira",
     preco: "R$ 80,00",
-    imagens: [camisaBranca],
+    imagens: [camisaCalca],
   },
   {
     id: 3,
@@ -50,21 +60,42 @@ const produtos: Produto[] = [
     nome: "Atabaque Pequeno",
     descricao: "Atabaque tradicional para roda de capoeira",
     preco: "R$ 120,00",
-    imagens: [canecas],
+    imagens: [funcional],
   },
   {
     id: 5,
     nome: "Pandeiro Profissional",
     descricao: "Pandeiro de alta qualidade para musicalização",
     preco: "R$ 90,00",
-    imagens: [camisaBranca],
+    imagens: [camisaCalca],
   },
   {
     id: 6,
     nome: "Moleton Benaias",
     descricao: "Preto, Vermelho ou Branco",
-    preco: "R$ 189,90",
-    imagens: [camisaPreta, camisaBranca],
+    preco: "R$ 220,00",
+    imagens: [moletonPreto, moletonVermelho, moletonBranco],
+  },
+  {
+    id: 7,
+    nome: "Coquinho",
+    descricao: "Preto, Vermelho ou Branco",
+    preco: "R$ 150,00",
+    imagens: [coquinho],
+  },
+  {
+    id: 8,
+    nome: "Pandeiro",
+    descricao: "Preto, Vermelho ou Branco",
+    preco: "R$ 180,90",
+    imagens: [pandeiro],
+  },
+  {
+    id: 9,
+    nome: "Berimbau",
+    descricao: "Preto, Vermelho ou Branco",
+    preco: "R$ 200,00",
+    imagens: [berimbau],
   },
 ];
 
