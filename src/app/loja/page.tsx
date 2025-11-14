@@ -123,7 +123,7 @@ export default function LojaPage() {
       <section className="py-16 bg-gradient-to-r from-red-600 to-red-950 text-white">
         <div className="container mx-auto px-4 text-center">
           <ShoppingCart className="w-16 h-16 mx-auto mb-6" />
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Loja CEEC</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Loja @USEBENAIAS</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Produtos oficiais e equipamentos para capoeira, música e cultura
             brasileira.
