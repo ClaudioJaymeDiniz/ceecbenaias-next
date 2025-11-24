@@ -12,6 +12,10 @@ import hero from "@/assets/images/capa-hero2.png";
 import Footer from "@/components/footer/footer";
 
 import Header from "@/components/header/header";
+import SponsorLogos from "@/components/parceiros/parceiros";
+
+import tiorafa1 from "@/assets/images/parceiros/tiorafa1.jpg";
+import tiorafa2 from "@/assets/images/parceiros/tiorafa2.jpg";
 
 export default function HomePage() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -59,6 +63,36 @@ export default function HomePage() {
                   </Button>
                 </a>
               </div>
+              {/* -----------LOGOS CORRIGIDOS-------------- */}
+              <div className="flex items-center justify-around md:justify-start gap-6 w-full mt-4">
+                {" "}
+                {/* Ajustes de alinhamento e espaçamento */}
+                {/* Logo 1 */}
+                <div className="w-24 h-24 relative">
+                  {" "}
+                  {/* Contêiner de tamanho razoável para a imagem */}
+                  <Image
+                    src={tiorafa1}
+                    alt="Parceiro Logo 1"
+                    width={96} // Ajustado para ser w-24 (96px)
+                    height={96} // Ajustado para ser h-24 (96px)
+                    className="w-full h-full object-contain rounded-lg" // 'rounded-lg' fica mais bonito que 'rounded'
+                  />
+                </div>
+                {/* Logo 2 */}
+                <div className="w-24 h-24 relative">
+                  {" "}
+                  {/* Contêiner de tamanho razoável para a imagem */}
+                  <Image
+                    src={tiorafa2}
+                    alt="Parceiro Logo 2"
+                    width={96} // Ajustado para ser w-24 (96px)
+                    height={96} // Ajustado para ser h-24 (96px)
+                    className="w-full h-full object-contain rounded-lg"
+                  />
+                </div>
+              </div>
+              {/* --------------------------------- */}
             </div>
             <div className="relative">
               <Image
@@ -104,45 +138,6 @@ export default function HomePage() {
                   <h4 className="text-xl font-bold text-white">GURUPASS</h4>
                 </CardContent>
               </Card>
-
-              {/* Gympass */}
-              {/* <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Dumbbell className="w-8 h-8 text-red-600" />
-                  </div>
-                  <h4 className="text-xl font-bold text-white mb-2">GYMPASS</h4>
-                  <p className="text-red-200 text-sm">
-                    Acesso facilitado através da plataforma Gympass
-                  </p>
-                </CardContent>
-              </Card> */}
-
-              {/* Totalpass */}
-              {/* <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Heart className="w-8 h-8 text-red-600" />
-                  </div>
-                  <h4 className="text-xl font-bold text-white mb-2">TOTALPASS</h4>
-                  <p className="text-red-200 text-sm">
-                    Bem-estar completo com benefícios Totalpass
-                  </p>
-                </CardContent>
-              </Card> */}
-
-              {/* Gurupass */}
-              {/* <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Brain className="w-8 h-8 text-red-600" />
-                  </div>
-                  <h4 className="text-xl font-bold text-white mb-2">GURUPASS</h4>
-                  <p className="text-red-200 text-sm">
-                    Desenvolvimento pessoal através do Gurupass
-                  </p>
-                </CardContent>
-              </Card> */}
             </div>
 
             <div className="text-center mt-8">
@@ -152,6 +147,7 @@ export default function HomePage() {
               </p>
             </div>
           </div>
+          <SponsorLogos />
         </div>
       </section>
 
@@ -425,4 +421,55 @@ export default function HomePage() {
       )}
     </div>
   );
+}
+
+{
+  /* Gympass */
+}
+{
+  /* <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Dumbbell className="w-8 h-8 text-red-600" />
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-2">GYMPASS</h4>
+                  <p className="text-red-200 text-sm">
+                    Acesso facilitado através da plataforma Gympass
+                  </p>
+                </CardContent>
+              </Card> */
+}
+
+{
+  /* Totalpass */
+}
+{
+  /* <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Heart className="w-8 h-8 text-red-600" />
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-2">TOTALPASS</h4>
+                  <p className="text-red-200 text-sm">
+                    Bem-estar completo com benefícios Totalpass
+                  </p>
+                </CardContent>
+              </Card> */
+}
+
+{
+  /* Gurupass */
+}
+{
+  /* <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Brain className="w-8 h-8 text-red-600" />
+                  </div>
+                  <h4 className="text-xl font-bold text-white mb-2">GURUPASS</h4>
+                  <p className="text-red-200 text-sm">
+                    Desenvolvimento pessoal através do Gurupass
+                  </p>
+                </CardContent>
+              </Card> */
 }

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore: side-effect import of global CSS without type declarations
 import "../styles/globals.css";
 
 export const metadata: Metadata = {

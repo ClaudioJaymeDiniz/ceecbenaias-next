@@ -4,13 +4,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 
+import angola from "@/assets/images/capoeira/angola.jpg";
+import regional from "@/assets/images/capoeira/cap-12.jpeg";
+import contemporanea from "@/assets/images/capoeira/contemporanea.png";
+import maculele from "@/assets/images/capoeira/maculelee.png";
+
 const lutas = [
   {
     id: 1,
     nome: "Capoeira Angola",
     descricao:
       "Estilo tradicional da capoeira, mais próximo ao chão, com movimentos lentos e ritualizados.",
-    imagem: "/angola.jpg?height=300&width=400",
+    imagem: angola,
     caracteristicas: [
       "Movimentos lentos",
       "Jogo próximo ao chão",
@@ -22,7 +27,7 @@ const lutas = [
     nome: "Capoeira Regional",
     descricao:
       "Estilo criado por Mestre Bimba, com movimentos mais rápidos e acrobáticos.",
-    imagem: "/cap-12.jpeg?height=300&width=400",
+    imagem: regional,
     caracteristicas: [
       "Movimentos rápidos",
       "Acrobacias",
@@ -34,7 +39,7 @@ const lutas = [
     nome: "Capoeira Contemporânea",
     descricao:
       "Fusão dos estilos Angola e Regional, adaptada para os tempos modernos.",
-    imagem: "/contemporanea.png?height=300&width=400",
+    imagem: contemporanea,
     caracteristicas: [
       "Versatilidade",
       "Adaptação moderna",
@@ -45,7 +50,7 @@ const lutas = [
     id: 4,
     nome: "Maculelê",
     descricao: "Dança folclórica brasileira que simula uma luta com bastões.",
-    imagem: "/maculelee.png?height=300&width=400",
+    imagem: maculele,
     caracteristicas: ["Uso de bastões", "Dança folclórica", "Ritmo intenso"],
   },
 ];
