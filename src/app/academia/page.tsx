@@ -3,27 +3,35 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dumbbell, Users, Clock, Award } from "lucide-react";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
+import equipamento from "@/assets/images/academia/equipamentos.jpg";
+import academia from "@/assets/images/academia/academia.jpg";
+import loja from "@/assets/images/academia/loja.jpg";
+import area from "@/assets/images/academia/area.jpg";
+import alongamento from "@/assets/images/academia/alongamento.jpg";
 
 const equipamentos = [
   {
     nome: "Loja",
-    descricao: "Loja completa com roupas, equipamentos e suplementos para todas as suas necessidades de treino.",
-    imagem: "/academia/loja.jpg?height=250&width=350",
+    descricao:
+      "Loja completa com roupas, equipamentos e suplementos para todas as suas necessidades de treino.",
+    imagem: loja,
   },
   {
     nome: "Equipamentos",
-    descricao: "Equipamentos voltados para treinamento funcional e preparação física de alta performance.",
-    imagem: "/academia/equipamentos.jpg?height=250&width=350",
+    descricao:
+      "Equipamentos voltados para treinamento funcional e preparação física de alta performance.",
+    imagem: equipamento,
   },
   {
     nome: "Área Academia",
-    descricao: "Espaço de academia totalmente equipado para lutas, com estrutura segura e profissional.",
-    imagem: "/academia/area.jpg?height=250&width=350",
+    descricao:
+      "Espaço de academia totalmente equipado para lutas, com estrutura segura e profissional.",
+    imagem: area,
   },
   {
     nome: "Área de Alongamento",
     descricao: "Espaço dedicado para aquecimento e relaxamento",
-    imagem: "/academia/academia4.jpg?height=250&width=350",
+    imagem: alongamento,
   },
 ];
 
@@ -80,7 +88,7 @@ export default function AcademiaPage() {
             </div>
             <div>
               <Image
-                src="/academia/principal.jpg?height=400&width=500"
+                src={academia}
                 alt="Academia CEEC"
                 width={500}
                 height={400}
@@ -110,7 +118,7 @@ export default function AcademiaPage() {
                     alt={equipamento.nome}
                     width={350}
                     height={250}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <CardContent className="p-4">

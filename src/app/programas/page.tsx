@@ -12,7 +12,7 @@ import {
   Clock,
   MapPin,
 } from "lucide-react";
-// import Logo from "@/components/ui/logo";
+
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 
@@ -53,7 +53,7 @@ const programas = [
         "Condicionamento Físico",
       ],
     },
-    imagem: "/jiujitsu.png?height=300&width=400",
+    imagem: "/jiu.jpg?height=300&width=400",
   },
   {
     id: 3,
@@ -67,7 +67,7 @@ const programas = [
       frequencia: "3x semana",
       beneficios: ["Força", "Reflexos", "Disciplina", "Saúde cardiovascular"],
     },
-    imagem: "/iron30.jpeg?height=300&width=400",
+    imagem: "/iron30.jpg?height=300&width=400",
   },
   {
     id: 4,

@@ -67,10 +67,10 @@ const produtos: Produto[] = [
     preco: "R$ 65,00",
     imagens: [funcional],
   },
-  
+
   {
     id: 5,
-    nome: "Conjunto Moleton Benais",
+    nome: "Conjunto Moleton Benaias",
     descricao: "Conjunto de moleton e calça BENAIAS",
     preco: "R$ 300,00",
     imagens: [conjunto],
@@ -123,7 +123,9 @@ export default function LojaPage() {
       <section className="py-16 bg-gradient-to-r from-red-600 to-red-950 text-white">
         <div className="container mx-auto px-4 text-center">
           <ShoppingCart className="w-16 h-16 mx-auto mb-6" />
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Loja @USEBENAIAS</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            Loja @USEBENAIAS
+          </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Produtos oficiais e equipamentos para capoeira, música e cultura
             brasileira.
@@ -198,19 +200,19 @@ function ProdutoCard({
           alt={produto.nome}
           width={300}
           height={300}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
         {produto.imagens.length > 1 && (
           <>
             <Button
               onClick={prevImage}
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/50 hover:bg-white/75 p-1 rounded-full"
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-red-500/50 hover:bg-red-500/75 p-1 rounded-full"
             >
               <ChevronLeft className="w-6 h-6" />
             </Button>
             <Button
               onClick={nextImage}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/50 hover:bg-white/75 p-1 rounded-full"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-red-500/50 hover:bg-red-500/75 p-1 rounded-full"
             >
               <ChevronRight className="w-6 h-6" />
             </Button>
