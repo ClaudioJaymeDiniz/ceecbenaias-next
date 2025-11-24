@@ -7,7 +7,7 @@ import {
   Users,
   Music,
   Dumbbell,
-  Brain,
+  // Brain,
   Heart,
   Clock,
   MapPin,
@@ -15,6 +15,7 @@ import {
 
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
+import imgcapoeira from "@/assets/images/capoeira/cap-12.jpeg";
 
 const programas = [
   {
@@ -34,7 +35,7 @@ const programas = [
         "Condicionamento físico",
       ],
     },
-    imagem: "/cap-12.jpeg?height=300&width=400",
+    imagem: imgcapoeira,
   },
   {
     id: 2,
@@ -88,7 +89,7 @@ const programas = [
     },
     imagem: "/capoevida-logo.png?height=300&width=400",
   },
-  
+
   {
     id: 5,
     nome: "Treinos personalizados de Musculação",
@@ -108,25 +109,25 @@ const programas = [
     },
     imagem: "/fun4.jpeg",
   },
-  {
-    id: 6,
-    nome: "Libras",
-    descricao:
-      "Agora temos curso de LIBRAS e aulas de Capoeira para Surdos.Um espaço de inclusão, cultura e movimento para todos!",
-    icone: Brain,
-    detalhes: {
-      idade: "Todas as idades",
-      duracao: "45min por sessão",
-      frequencia: "2-3x por semana",
-      beneficios: [
-        "Desenvolvimento motor",
-        "Socialização",
-        "Autonomia",
-        "Bem-estar",
-      ],
-    },
-    imagem: "/librass.png?height=300&width=400",
-  },
+  // {
+  //   id: 6,
+  //   nome: "Libras",
+  //   descricao:
+  //     "Agora temos curso de LIBRAS e aulas de Capoeira para Surdos.Um espaço de inclusão, cultura e movimento para todos!",
+  //   icone: Brain,
+  //   detalhes: {
+  //     idade: "Todas as idades",
+  //     duracao: "45min por sessão",
+  //     frequencia: "2-3x por semana",
+  //     beneficios: [
+  //       "Desenvolvimento motor",
+  //       "Socialização",
+  //       "Autonomia",
+  //       "Bem-estar",
+  //     ],
+  //   },
+  //   imagem: "/librass.png?height=300&width=400",
+  // },
   {
     id: 7,
     nome: "Musicalização e Cultura",
@@ -146,12 +147,6 @@ const programas = [
     },
     imagem: "/music.jpeg?height=300&width=400",
   },
-  
-  
-  
-  
-  
-  
 ];
 
 export default function ProgramasPage() {

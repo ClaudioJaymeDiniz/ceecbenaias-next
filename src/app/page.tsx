@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Music, Dumbbell, Brain, Heart, X } from "lucide-react";
+import { Users, Music, Dumbbell, Heart, X } from "lucide-react";
 import { useState } from "react";
 import perfil from "@/assets/images/rafaperfil.png";
 import hero from "@/assets/images/capa-hero2.png";
@@ -16,6 +16,7 @@ import SponsorLogos from "@/components/parceiros/parceiros";
 
 import tiorafa1 from "@/assets/images/parceiros/tiorafa1.jpg";
 import tiorafa2 from "@/assets/images/parceiros/tiorafa2.jpg";
+import logo from "@/assets/images/logo-2.jpg";
 
 export default function HomePage() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -73,7 +74,7 @@ export default function HomePage() {
                   {/* Contêiner de tamanho razoável para a imagem */}
                   <Image
                     src={tiorafa1}
-                    alt="Parceiro Logo 1"
+                    alt="Tio Rafa Logo 1"
                     width={96} // Ajustado para ser w-24 (96px)
                     height={96} // Ajustado para ser h-24 (96px)
                     className="w-full h-full object-contain rounded-lg" // 'rounded-lg' fica mais bonito que 'rounded'
@@ -85,7 +86,19 @@ export default function HomePage() {
                   {/* Contêiner de tamanho razoável para a imagem */}
                   <Image
                     src={tiorafa2}
-                    alt="Parceiro Logo 2"
+                    alt="Tio Rafa Logo 2"
+                    width={96} // Ajustado para ser w-24 (96px)
+                    height={96} // Ajustado para ser h-24 (96px)
+                    className="w-full h-full object-contain rounded-lg"
+                  />
+                </div>
+                {/* Logo 3 */}
+                <div className="w-24 h-24 relative">
+                  {" "}
+                  {/* Contêiner de tamanho razoável para a imagem */}
+                  <Image
+                    src={logo}
+                    alt="CEEC Benaias Logo"
                     width={96} // Ajustado para ser w-24 (96px)
                     height={96} // Ajustado para ser h-24 (96px)
                     className="w-full h-full object-contain rounded-lg"
@@ -218,7 +231,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-100 hover:border-red-200 transition-colors">
+            {/* <Card className="border-2 border-gray-100 hover:border-red-200 transition-colors">
               <CardContent className="p-6 text-center">
                 <Brain className="w-12 h-12 text-red-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Libras</h3>
@@ -227,7 +240,7 @@ export default function HomePage() {
                   espaço de inclusão, cultura e movimento para todos!
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
 
             <Card className="border-2 border-gray-100 hover:border-red-200 transition-colors">
               <CardContent className="p-6 text-center">
@@ -252,8 +265,8 @@ export default function HomePage() {
                 </p>
               </CardContent>
             </Card>
-
-            <Card className="border-2 border-gray-100 hover:border-red-200 transition-colors lg:col-span-3">
+            {/* lg:col-span-3 */}
+            <Card className="border-2 border-gray-100 hover:border-red-200 transition-colors ">
               <CardContent className="p-6 text-center">
                 <Heart className="w-12 h-12 text-red-600 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-gray-900 mb-2">

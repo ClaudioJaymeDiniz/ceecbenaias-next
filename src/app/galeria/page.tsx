@@ -37,6 +37,8 @@ import img25 from "@/assets/images/galeria/img25.jpg";
 import img26 from "@/assets/images/galeria/img26.jpg";
 import img27 from "@/assets/images/galeria/img27.jpg";
 import img28 from "@/assets/images/galeria/img28.jpg";
+import img29 from "@/assets/images/galeria/img29.jpg";
+import img30 from "@/assets/images/galeria/img30.png";
 
 // Array de fotos tipado
 const fotos: Foto[] = [
@@ -68,6 +70,8 @@ const fotos: Foto[] = [
   { id: 26, imagem: img26 },
   { id: 27, imagem: img27 },
   { id: 28, imagem: img28 },
+  { id: 29, imagem: img29 },
+  { id: 30, imagem: img30 },
 ];
 
 export default function GaleriaPage() {
