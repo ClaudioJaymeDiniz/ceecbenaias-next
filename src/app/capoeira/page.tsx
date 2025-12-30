@@ -4,10 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 
-import angola from "@/assets/images/capoeira/angola.jpg";
+import angola from "@/assets/images/capoeira/angola.jpeg";
 import regional from "@/assets/images/capoeira/cap-12.jpeg";
-import contemporanea from "@/assets/images/capoeira/contemporanea.png";
-import maculele from "@/assets/images/capoeira/maculelee.png";
+import contemporanea from "@/assets/images/capoeira/contemp.jpeg";
+import maculele from "@/assets/images/capoeira/maculele.png";
 
 const lutas = [
   {

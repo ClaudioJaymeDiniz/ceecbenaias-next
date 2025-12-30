@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Users, Music, Dumbbell, Heart, X } from "lucide-react";
 import { useState } from "react";
 import perfil from "@/assets/images/rafaperfil.png";
-import hero from "@/assets/images/capa-hero2.png";
+import hero from "@/assets/images/capa-hero.jpeg";
 import Footer from "@/components/footer/footer";
 
 import Header from "@/components/header/header";
@@ -16,7 +16,7 @@ import SponsorLogos from "@/components/parceiros/parceiros";
 
 import tiorafa1 from "@/assets/images/parceiros/tiorafa1.jpg";
 import tiorafa2 from "@/assets/images/parceiros/tiorafa2.jpg";
-import logo from "@/assets/images/logo-2.jpg";
+import logo from "@/assets/images/parceiros/benaias.jpeg";
 
 export default function HomePage() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);

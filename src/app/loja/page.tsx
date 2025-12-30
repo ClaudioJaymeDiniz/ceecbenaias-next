@@ -11,7 +11,7 @@ import { StaticImageData } from "next/image";
 import camisaRosa from "@/assets/images/loja/camisa-preta.jpg";
 import camisaVerde from "@/assets/images/loja/camisa-verde.jpg";
 
-import camisaCalca from "@/assets/images/loja/camisa-calca.jpg";
+import camisaCalca from "@/assets/images/loja/camisa-calca.jpeg";
 
 import moletonPreto from "@/assets/images/loja/meleton-preto.jpg";
 import moletonBranco from "@/assets/images/loja/moleton-branco.jpg";

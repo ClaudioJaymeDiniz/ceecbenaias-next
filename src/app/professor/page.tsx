@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, BookOpen, Users, Heart } from "lucide-react";
 
-import perfil from "@/assets/images/img9.jpg";
+import perfil from "@/assets/images/rafaperfil.png";
 import Footer from "@/components/footer/footer";
 
 import Header from "@/components/header/header";

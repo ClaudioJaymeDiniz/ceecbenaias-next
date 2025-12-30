@@ -22,14 +22,11 @@ const sponsors: Sponsor[] = [
   {
     name: "BF Gestão",
     src: bf,
-    link: "https://bfgestao.com",
+    // link: "https://bfgestao.com",
   },
   { name: "IEVP", src: ievp },
-  { name: "IEVP", src: pincelmagico },
-  {
-    name: "Klebão Loko",
-    src: klebao,
-  },
+  { name: "Pincel Mágico", src: pincelmagico },
+  { name: "Klebão Loko", src: klebao},
   { name: "Colégio Nascimento", src: cnascimento },
   { name: "Colégio Referência", src: creferencia },
 ];

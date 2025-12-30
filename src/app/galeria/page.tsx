@@ -9,7 +9,7 @@ import Header from "@/components/header/header";
 import ImageModal, { Foto } from "@/components/imagens/imageModals";
 
 // Importações das imagens
-import img1 from "@/assets/images/galeria/img1.jpg";
+import img1 from "@/assets/images/galeria/img1.jpeg";
 import img2 from "@/assets/images/galeria/img2.jpg";
 import img3 from "@/assets/images/galeria/img3.jpg";
 import img4 from "@/assets/images/galeria/img4.jpg";

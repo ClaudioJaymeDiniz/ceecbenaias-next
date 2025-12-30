@@ -145,7 +145,7 @@ const programas = [
         "Cultura musical",
       ],
     },
-    imagem: "/music.jpeg?height=300&width=400",
+    imagem: "/musica.jpeg?height=300&width=400",
   },
 ];
 
