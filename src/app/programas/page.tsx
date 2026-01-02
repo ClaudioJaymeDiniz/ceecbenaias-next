@@ -68,7 +68,7 @@ const programas = [
       frequencia: "3x semana",
       beneficios: ["Força", "Reflexos", "Disciplina", "Saúde cardiovascular"],
     },
-    imagem: "/iron30.jpg?height=300&width=400",
+    imagem: "/funcional.jpeg?height=300&width=400",
   },
   {
     id: 4,
@@ -87,7 +87,7 @@ const programas = [
         "Qualidade de vida",
       ],
     },
-    imagem: "/capoevida-logo.png?height=300&width=400",
+    imagem: "/capoevida.jpeg?height=300&width=400",
   },
 
   {
@@ -107,7 +107,7 @@ const programas = [
         "Saúde geral",
       ],
     },
-    imagem: "/fun4.jpeg",
+    imagem: "/treinos.jpeg",
   },
   // {
   //   id: 6,
