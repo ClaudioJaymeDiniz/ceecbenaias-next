@@ -11,34 +11,35 @@ import ImageModal, { Foto } from "@/components/imagens/imageModals";
 // Importações das imagens
 import img1 from "@/assets/images/galeria/img1.jpeg";
 import img2 from "@/assets/images/galeria/img2.jpg";
-import img3 from "@/assets/images/galeria/img3.jpg";
+import img3 from "@/assets/images/galeria/img3.jpeg";
 import img4 from "@/assets/images/galeria/img4.jpg";
 import img5 from "@/assets/images/galeria/img5.jpg";
 import img6 from "@/assets/images/galeria/img6.jpg";
 import img7 from "@/assets/images/galeria/img7.jpg";
-import img8 from "@/assets/images/galeria/img8.jpg";
+import img8 from "@/assets/images/galeria/img8.jpeg";
 import img9 from "@/assets/images/galeria/img9.jpg";
-import img10 from "@/assets/images/galeria/img10.jpg";
-import img11 from "@/assets/images/galeria/img11.jpg";
-import img12 from "@/assets/images/galeria/img12.jpg";
-import img13 from "@/assets/images/galeria/img13.jpg";
-import img14 from "@/assets/images/galeria/img14.jpg";
-import img15 from "@/assets/images/galeria/img15.jpg";
-import img16 from "@/assets/images/galeria/img16.jpg";
-import img17 from "@/assets/images/galeria/img17.jpg";
-import img18 from "@/assets/images/galeria/img18.jpg";
-import img19 from "@/assets/images/galeria/img19.jpg";
+import img10 from "@/assets/images/galeria/img10.jpeg";
+import img11 from "@/assets/images/galeria/img11.jpeg";
+import img12 from "@/assets/images/galeria/img12.jpeg";
+import img13 from "@/assets/images/galeria/img13.jpeg";
+import img14 from "@/assets/images/galeria/img14.jpeg";
+import img15 from "@/assets/images/galeria/img15.jpeg";
+// import img16 from "@/assets/images/galeria/img16.jpg";
+// import img17 from "@/assets/images/galeria/img17.jpg";
+// import img18 from "@/assets/images/galeria/img18.jpg";
+// import img19 from "@/assets/images/galeria/img19.jpg";
+
 import img20 from "@/assets/images/galeria/img20.jpg";
-import img21 from "@/assets/images/galeria/img21.jpg";
+import img21 from "@/assets/images/capa-hero.jpeg";
 import img22 from "@/assets/images/galeria/img22.jpg";
 import img23 from "@/assets/images/galeria/img23.jpg";
-import img24 from "@/assets/images/galeria/img24.jpg";
-import img25 from "@/assets/images/galeria/img25.jpg";
-import img26 from "@/assets/images/galeria/img26.jpg";
-import img27 from "@/assets/images/galeria/img27.jpg";
-import img28 from "@/assets/images/galeria/img28.jpg";
-import img29 from "@/assets/images/galeria/img29.jpg";
-import img30 from "@/assets/images/galeria/img30.png";
+import img24 from "@/assets/images/galeria/img24.jpeg";
+import img25 from "@/assets/images/galeria/img25.jpeg";
+// import img26 from "@/assets/images/galeria/img26.jpg";
+// import img27 from "@/assets/images/sobrenos.jpg";
+// import img28 from "@/assets/images/galeria/img28.jpg";
+// import img29 from "@/assets/images/galeria/img29.jpg";
+// import img30 from "@/assets/images/galeria/img30.png";
 
 // Array de fotos tipado
 const fotos: Foto[] = [
@@ -57,21 +58,21 @@ const fotos: Foto[] = [
   { id: 13, imagem: img13 },
   { id: 14, imagem: img14 },
   { id: 15, imagem: img15 },
-  { id: 16, imagem: img16 },
-  { id: 17, imagem: img17 },
-  { id: 18, imagem: img18 },
-  { id: 19, imagem: img19 },
+  // { id: 16, imagem: img16 },
+  // { id: 17, imagem: img17 },
+  // { id: 18, imagem: img18 },
+  // { id: 19, imagem: img19 },
   { id: 20, imagem: img20 },
   { id: 21, imagem: img21 },
   { id: 22, imagem: img22 },
   { id: 23, imagem: img23 },
   { id: 24, imagem: img24 },
   { id: 25, imagem: img25 },
-  { id: 26, imagem: img26 },
-  { id: 27, imagem: img27 },
-  { id: 28, imagem: img28 },
-  { id: 29, imagem: img29 },
-  { id: 30, imagem: img30 },
+  // { id: 26, imagem: img26 },
+  // { id: 27, imagem: img27 },
+  // { id: 28, imagem: img28 },
+  // { id: 29, imagem: img29 },
+  // { id: 30, imagem: img30 },
 ];
 
 export default function GaleriaPage() {
