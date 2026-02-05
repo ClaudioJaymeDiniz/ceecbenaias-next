@@ -35,11 +35,11 @@ import img22 from "@/assets/images/galeria/img22.jpg";
 import img23 from "@/assets/images/galeria/img23.jpg";
 import img24 from "@/assets/images/galeria/img24.jpeg";
 import img25 from "@/assets/images/galeria/img25.jpeg";
-// import img26 from "@/assets/images/galeria/img26.jpg";
-// import img27 from "@/assets/images/sobrenos.jpg";
-// import img28 from "@/assets/images/galeria/img28.jpg";
-// import img29 from "@/assets/images/galeria/img29.jpg";
-// import img30 from "@/assets/images/galeria/img30.png";
+import img26 from "@/assets/images/galeria/img26.jpeg";
+import img27 from "@/assets/images/galeria/img27.jpeg";
+import img28 from "@/assets/images/galeria/img28.jpeg";
+import img29 from "@/assets/images/galeria/img29.jpeg";
+import img30 from "@/assets/images/galeria/img30.jpeg";
 
 // Array de fotos tipado
 const fotos: Foto[] = [
@@ -68,11 +68,11 @@ const fotos: Foto[] = [
   { id: 23, imagem: img23 },
   { id: 24, imagem: img24 },
   { id: 25, imagem: img25 },
-  // { id: 26, imagem: img26 },
-  // { id: 27, imagem: img27 },
-  // { id: 28, imagem: img28 },
-  // { id: 29, imagem: img29 },
-  // { id: 30, imagem: img30 },
+  { id: 26, imagem: img26 },
+  { id: 27, imagem: img27 },
+  { id: 28, imagem: img28 },
+  { id: 29, imagem: img29 },
+  { id: 30, imagem: img30 },
 ];
 
 export default function GaleriaPage() {
