@@ -41,7 +41,8 @@ const programas = [
     id: 2,
     nome: "Jiu-Jitsu",
     descricao:
-      "Treinos rápidos, intensos e eficientes! O IRON30 foi criado para quem quer resultado sem perder tempo. Em apenas 30 minutos você melhora condicionamento, força, mobilidade e queima calorias de forma inteligente. Movimentos funcionais, alta energia e evoluçãoa cada aula",
+    "Treinamento técnico e físico com foco em golpes, defesa e estratégia. Indicado para todas as idades.",  
+    
     icone: Users,
     detalhes: {
       idade: "A partir de 3 anos",
@@ -60,7 +61,7 @@ const programas = [
     id: 3,
     nome: "IRON30",
     descricao:
-      "Treinamento técnico e físico com foco em golpes, defesa e estratégia. Indicado para todas as idades.",
+      "Treinos rápidos, intensos e eficientes! O IRON30 foi criado para quem quer resultado sem perder tempo. Em apenas 30 minutos você melhora condicionamento, força, mobilidade e queima calorias de forma inteligente. Movimentos funcionais, alta energia e evoluçãoa cada aula",
     icone: Users,
     detalhes: {
       idade: "A partir de 10 anos",

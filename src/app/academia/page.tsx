@@ -3,11 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dumbbell, Users, Clock, Award } from "lucide-react";
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
+
 import equipamento from "@/assets/images/academia/equipamentos.jpg";
 import academia from "@/assets/images/academia/academia.jpg";
-import loja from "@/assets/images/academia/loja.jpg";
-import area from "@/assets/images/academia/area.jpg";
-import alongamento from "@/assets/images/academia/alongamento.jpg";
+import loja from "@/assets/images/academia/loja.jpeg";
+import area from "@/assets/images/academia/area.jpeg";
+import alongamento from "@/assets/images/academia/certificados.jpeg";
 
 const equipamentos = [
   {
@@ -29,8 +30,8 @@ const equipamentos = [
     imagem: area,
   },
   {
-    nome: "Área de Alongamento",
-    descricao: "Espaço dedicado para aquecimento e relaxamento",
+    nome: "Certificados",
+    descricao: "Certificados de cursos e especializações dos nossos profissionais, garantindo qualidade e segurança nos treinos.",
     imagem: alongamento,
   },
 ];

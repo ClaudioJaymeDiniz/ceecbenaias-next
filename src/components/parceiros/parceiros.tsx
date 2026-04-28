@@ -7,7 +7,7 @@ import ievp from "@/assets/images/parceiros/ievp.jpg";
 import pincelmagico from "@/assets/images/parceiros/pincelmagico.jpg";
 import klebao from "@/assets/images/parceiros/klebao.jpg";
 import cnascimento from "@/assets/images/parceiros/colegionascimento.jpg";
-import creferencia from "@/assets/images/parceiros/colegioreferencia.jpg";
+import bispotalks from "@/assets/images/parceiros/bispotalks.jpeg";
 
 // 1. Definindo o tipo (interface) para um Patrocinador
 interface Sponsor {
@@ -28,7 +28,7 @@ const sponsors: Sponsor[] = [
   { name: "Pincel Mágico", src: pincelmagico },
   { name: "Klebão Loko", src: klebao},
   { name: "Colégio Nascimento", src: cnascimento },
-  { name: "Colégio Referência", src: creferencia },
+  { name: "Bispo Talks", src: bispotalks },
 ];
 
 export default function SponsorLogos() {
