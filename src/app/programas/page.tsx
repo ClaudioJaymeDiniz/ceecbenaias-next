@@ -45,7 +45,7 @@ const programas = [
     
     icone: Users,
     detalhes: {
-      idade: "A partir de 3 anos",
+      idade: "A partir de 6 anos",
       duracao: "1h por aula",
       frequencia: "2x por semana",
       beneficios: [

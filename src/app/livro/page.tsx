@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import Footer from "@/components/footer/footer";
-import capalivro from "@/assets/images/capalivro.png";
+import capalivro from "@/assets/images/livro/rafaresgatado.jpeg";
 import Header from "@/components/header/header";
 
 export default function LivroPage() {
