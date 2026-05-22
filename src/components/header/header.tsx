@@ -56,12 +56,14 @@ export default function Header() {
             Academia
           </Link>
           */}
+          {/*
           <Link
             href="/livro"
             className="text-gray-700 hover:text-red-600 transition-colors"
           >
             Livro
           </Link>
+          */}
           <Link
             href="/loja"
             className="text-gray-700 hover:text-red-600 transition-colors"
@@ -140,6 +142,7 @@ export default function Header() {
             </Link>
 
             */}
+            {/*
             <Link
               href="/livro"
               className="block text-gray-700 hover:text-red-600 transition-colors py-2"
@@ -147,6 +150,7 @@ export default function Header() {
             >
               Livro
             </Link>
+            */}
 
             <Link
               href="/loja"

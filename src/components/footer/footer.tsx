@@ -82,12 +82,13 @@ export default function Footer() {
               >
                 Academia
               </Link> */}
+              {/*
               <Link
                 href="/livro"
                 className="block text-gray-400 hover:text-white transition-colors"
               >
                 Livro
-              </Link>
+              </Link> */}
               <Link
                 href="/loja"
                 className="block text-gray-400 hover:text-white transition-colors"
