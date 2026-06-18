@@ -1,11 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { useState } from "react";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 
-// Subcomponentes refatorados
 import HeroSection from "@/components/home/HeroSection";
 import PartnersSection from "@/components/home/PartnersSection";
 import AboutSection from "@/components/home/AboutSection";
