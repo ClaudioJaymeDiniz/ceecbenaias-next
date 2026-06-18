@@ -1,21 +1,44 @@
+"use client";
+
 import { Quote } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function ProfessorQuote() {
   return (
-    <section className="py-24 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* O ícone já faz o papel das aspas de forma elegante */}
-          <Quote className="w-10 h-10 text-red-600/20 mx-auto mb-6" />
+    <section className="py-24 bg-white relative overflow-hidden">
+      <div className="container mx-auto px-4 max-w-4xl text-center relative z-10">
+        
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <Quote className="w-12 h-12 text-red-600/15 mx-auto mb-6 animate-pulse" />
+        </motion.div>
 
-          <blockquote className="text-2xl lg:text-3xl text-gray-800 italic leading-relaxed">
-            Que este livro seja mais do que apenas uma leitura, mas sim uma
-            experiência que toque o seu coração e o leve a descobrir o
-            extraordinário poder da fé e do amor de Deus.
-          </blockquote>
+        <motion.blockquote 
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-xl sm:text-2xl lg:text-3xl text-slate-800 italic font-medium leading-relaxed max-w-3xl mx-auto"
+        >
+          "Que este livro seja mais do que apenas uma leitura, mas sim uma
+          experiência que toque o seu coração e o leve a descobrir o
+          extraordinário poder da fé e do amor de Deus."
+        </motion.blockquote>
 
-          <p className="mt-8 font-bold text-gray-900">Rafael Reis</p>
-        </div>
+        <motion.p 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="mt-6 font-extrabold text-slate-900 tracking-wide uppercase text-sm"
+        >
+          — Rafael Reis
+        </motion.p>
+        
       </div>
     </section>
   );
