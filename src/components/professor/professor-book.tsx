@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import capalivro from "@/assets/images/livro/rafaresgatado.jpeg";
+import capalivro from "@/assets/images/livro/oresgatado.jpeg";
 import { bookWhatsapp } from "@/lib/professor";
 import { motion } from "framer-motion";
 

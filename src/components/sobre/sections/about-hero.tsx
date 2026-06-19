@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Flame, MapPin, Shield } from "lucide-react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import heroImage from "@/assets/images/galeria/img36.png";
+import heroImage from "@/assets/images/home-sobre.jpeg";
 
 export function AboutHero() {
   return (

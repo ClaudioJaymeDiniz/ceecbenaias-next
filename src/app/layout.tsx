@@ -31,7 +31,7 @@ export default function RootLayout({
     <html 
       lang="pt-BR" 
       className={`${inter.variable} ${outfit.variable}`}
-      suppressHydrationWarning // 💡 Resolve o erro de hidratação causado por extensões do navegador
+      suppressHydrationWarning 
     >
       <body className="antialiased">
         {children}
