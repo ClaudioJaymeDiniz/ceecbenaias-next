@@ -83,9 +83,7 @@ export function GalleryGrid({ items, categories }: GalleryGridProps) {
               placeholder="blur" 
               // Se usar String de URL, remova o placeholder="blur"
             />
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <p className="text-white font-medium">{item.title}</p>
-            </div>
+            
           </div>
         ))}
       </div>
