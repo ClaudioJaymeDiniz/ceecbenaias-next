@@ -6,6 +6,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { GalleryItem, Category } from "@/lib/galeria"
+import { motion, AnimatePresence } from "framer-motion"
 
 interface GalleryGridProps {
   items: GalleryItem[]
@@ -44,6 +45,16 @@ export function GalleryGrid({ items, categories }: GalleryGridProps) {
     });
   }, [filteredItems.length])
 
+  // Trata o gesto de arrastar do dedo no mobile
+  const handleDragEnd = (event: any, info: any) => {
+    const threshold = 50; // Sensibilidade do swipe
+    if (info.offset.x < -threshold) {
+      navigate(1); // Arrastou para a esquerda -> Próxima imagem
+    } else if (info.offset.x > threshold) {
+      navigate(-1); // Arrastou para a direita -> Imagem anterior
+    }
+  };
+
   return (
     <>
       {/* Filtros */}
@@ -81,51 +92,75 @@ export function GalleryGrid({ items, categories }: GalleryGridProps) {
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover transition-transform duration-500 group-hover:scale-110"
               placeholder="blur" 
-              // Se usar String de URL, remova o placeholder="blur"
             />
-            
           </div>
         ))}
       </div>
 
-      {/* Lightbox Simples */}
-      {lightboxOpen && (
-        <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4">
-          <Button 
-            variant="ghost" 
-            className="absolute top-5 right-5 text-white" 
-            onClick={closeLightbox}
-          >
-            <X size={32} />
-          </Button>
-          
-          <Button 
-            variant="ghost" 
-            className="absolute left-5 text-white" 
-            onClick={() => navigate(-1)}
-          >
-            <ChevronLeft size={48} />
-          </Button>
+      {/* Lightbox Premium com Suporte a Touch e Swipe */}
+      <AnimatePresence>
+        {lightboxOpen && (
+          <div className="fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-center p-4 touch-pan-y select-none">
+            
+            {/* Botão de Fechar */}
+            <Button 
+              variant="ghost" 
+              className="absolute top-5 right-5 text-white/80 hover:text-white bg-white/5 hover:bg-white/10 rounded-full w-12 h-12 p-0 z-50" 
+              onClick={closeLightbox}
+            >
+              <X size={24} />
+            </Button>
+            
+            {/* Seta Esquerda (Oculta ou menor no mobile, confortável no desktop) */}
+            <Button 
+              variant="ghost" 
+              className="absolute left-4 md:left-8 text-white/70 hover:text-white bg-white/5 hover:bg-white/10 rounded-full w-12 h-12 p-0 hidden sm:flex items-center justify-center z-50 active:scale-90 transition-transform" 
+              onClick={() => navigate(-1)}
+            >
+              <ChevronLeft size={32} />
+            </Button>
 
-          <div className="relative w-full max-w-4xl h-[70vh]">
-             <Image
-                src={filteredItems[currentIndex].src}
-                alt={filteredItems[currentIndex].alt}
-                fill
-                className="object-contain"
-                priority
-             />
+            {/* Container da Imagem com Área Touch Inteligente */}
+            <div className="relative w-full max-w-4xl h-[75vh] flex items-center justify-center">
+               <motion.div
+                 key={currentIndex}
+                 initial={{ opacity: 0.6, scale: 0.95 }}
+                 animate={{ opacity: 1, scale: 1 }}
+                 exit={{ opacity: 0.6, scale: 0.95 }}
+                 transition={{ duration: 0.2, ease: "easeOut" }}
+                 drag="x"
+                 dragConstraints={{ left: 0, right: 0 }}
+                 dragElastic={0.4}
+                 onDragEnd={handleDragEnd}
+                 className="relative w-full h-full flex items-center justify-center cursor-grab active:cursor-grabbing"
+               >
+                 <Image
+                   src={filteredItems[currentIndex].src}
+                   alt={filteredItems[currentIndex].alt}
+                   fill
+                   className="object-contain pointer-events-none"
+                   priority
+                 />
+               </motion.div>
+            </div>
+
+            {/* Seta Direita (Oculta ou menor no mobile, confortável no desktop) */}
+            <Button 
+              variant="ghost" 
+              className="absolute right-4 md:right-8 text-white/70 hover:text-white bg-white/5 hover:bg-white/10 rounded-full w-12 h-12 p-0 hidden sm:flex items-center justify-center z-50 active:scale-90 transition-transform" 
+              onClick={() => navigate(1)}
+            >
+              <ChevronRight size={32} />
+            </Button>
+
+            {/* Indicador de paginação discreto na parte inferior (Útil para o Mobile) */}
+            <div className="absolute bottom-6 text-white/60 text-sm font-medium tracking-wider bg-white/5 px-4 py-1.5 rounded-full backdrop-blur-md">
+              {currentIndex + 1} / {filteredItems.length}
+            </div>
+
           </div>
-
-          <Button 
-            variant="ghost" 
-            className="absolute right-5 text-white" 
-            onClick={() => navigate(1)}
-          >
-            <ChevronRight size={48} />
-          </Button>
-        </div>
-      )}
+        )}
+      </AnimatePresence>
     </>
   )
 }
