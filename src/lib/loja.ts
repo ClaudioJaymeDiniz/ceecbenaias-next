@@ -53,7 +53,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     id: 4,
-    nome: "Camiseta Hashi",
+    nome: "Camiseta Rash Guard",
     descricao: "Rash guard com estampa exclusiva no peito.",
     preco: "R$ 119,90",
     imagens: [rashFrente, rashLateral, rashLaCostas, rashLaVerde],

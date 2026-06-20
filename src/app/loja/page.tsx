@@ -20,10 +20,9 @@ export default function LojaPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#faf9f6]">
       <Header />
 
-      {/* HERO SECTION PREMIUM */}
       <section className="relative overflow-hidden bg-gradient-to-br from-red-700 via-red-800 to-red-950 text-white py-20 lg:py-28 border-b border-red-950">
         <div className="absolute inset-0 bg-dot-pattern opacity-10 invert pointer-events-none" />
         
@@ -41,7 +40,7 @@ export default function LojaPage() {
             className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-1.5 rounded-full text-red-200 text-xs font-semibold tracking-wide uppercase shadow-inner backdrop-blur-md"
           >
             <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
-            Coleção Oficial @USEBENAIAS
+            Coleção Oficial #USEBENAIAS
           </motion.div>
 
           <motion.h1 
@@ -144,43 +143,72 @@ function ProdutoCard({
 }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const nextImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const nextImage = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === produto.imagens.length - 1 ? 0 : prevIndex + 1
     );
   };
 
-  const prevImage = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const prevImage = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? produto.imagens.length - 1 : prevIndex - 1
     );
+  };
+
+  // Trata o fim do arrasto para decidir se muda de imagem ou volta
+  const handleDragEnd = (event: any, info: any) => {
+    const threshold = 50; // Quantidade de pixels que o usuário precisa arrastar para disparar a troca
+    if (info.offset.x < -threshold) {
+      nextImage();
+    } else if (info.offset.x > threshold) {
+      prevImage();
+    }
   };
 
   return (
     <Card className="overflow-hidden border border-slate-100 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 bg-white group flex flex-col justify-between">
       
       {/* AREA DE CAROUSEL DA IMAGEM */}
-      <div className="relative h-72 w-full bg-slate-50 flex items-center justify-center overflow-hidden border-b border-slate-100 p-6 select-none">
-        <Image
-          src={produto.imagens[currentImageIndex] || "/placeholder.svg"}
-          alt={produto.nome}
-          fill
-          className="object-contain p-4 group-hover:scale-102 transition-transform duration-500"
-        />
+      <div className="relative h-72 w-full bg-slate-50 flex items-center justify-center overflow-hidden border-b border-slate-100 p-6 select-none touch-pan-y">
         
-        {/* SETAS DO SLIDE PREMIUM */}
+        {/* Container animado e arrastável */}
+        <motion.div
+          key={currentImageIndex}
+          initial={{ opacity: 0.6, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0.6 }}
+          transition={{ duration: 0.2, ease: "easeInOut" }}
+          drag={produto.imagens.length > 1 ? "x" : false}
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={0.4}
+          onDragEnd={handleDragEnd}
+          className="relative w-full h-full flex items-center justify-center cursor-grab active:cursor-grabbing"
+        >
+          <Image
+            src={produto.imagens[currentImageIndex] || "/placeholder.svg"}
+            alt={produto.nome}
+            fill
+            className="object-contain p-4 group-hover:scale-102 transition-transform duration-500 pointer-events-none"
+          />
+        </motion.div>
+        
+        {/* SETAS DO SLIDE (Visíveis por padrão no mobile, hover no desktop) */}
         {produto.imagens.length > 1 && (
-          <div className="absolute inset-x-3 top-1/2 -translate-y-1/2 flex justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <div className="absolute inset-x-3 top-1/2 -translate-y-1/2 flex justify-between md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
             <button
-              onClick={prevImage}
+              onClick={(e) => {
+                e.stopPropagation();
+                prevImage();
+              }}
               className="w-8 h-8 flex items-center justify-center bg-white/90 backdrop-blur-md hover:bg-white text-slate-800 rounded-full shadow-md active:scale-90 transition-all pointer-events-auto cursor-pointer"
             >
               <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
             </button>
             <button
-              onClick={nextImage}
+              onClick={(e) => {
+                e.stopPropagation();
+                nextImage();
+              }}
               className="w-8 h-8 flex items-center justify-center bg-white/90 backdrop-blur-md hover:bg-white text-slate-800 rounded-full shadow-md active:scale-90 transition-all pointer-events-auto cursor-pointer"
             >
               <ChevronRight className="w-5 h-5 stroke-[2.5]" />
