@@ -13,15 +13,12 @@ import inclusao7 from "@/assets/images/galeria/inclusao/inclusao7.jpeg";
 import inclusao9 from "@/assets/images/galeria/inclusao/inclusao9.jpeg";
 import inclusao10 from "@/assets/images/galeria/inclusao/inclusao10.jpeg";
 
+import programa0 from "@/assets/images/galeria/programas/prog0.jpeg";
 import programa1 from "@/assets/images/galeria/programas/prog1.jpeg";
 import programa2 from "@/assets/images/galeria/programas/prog2.jpeg";
 import programa3 from "@/assets/images/galeria/programas/prog3.jpeg";
 import programa4 from "@/assets/images/galeria/programas/prog4.jpeg";
-import programa5 from "@/assets/images/galeria/programas/prog5.jpeg";
-import programa6 from "@/assets/images/galeria/programas/prog6.jpeg";
-import programa7 from "@/assets/images/galeria/programas/prog7.jpg";
-import programa8 from "@/assets/images/galeria/programas/prog8.jpeg";
-import programa9 from "@/assets/images/galeria/programas/prog9.jpeg";
+
 import programa10 from "@/assets/images/galeria/programas/prog10.jpg";
 import programa11 from "@/assets/images/galeria/programas/prog11.jpg";
 import programa12 from "@/assets/images/galeria/programas/prog12.jpeg";
@@ -119,56 +116,32 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 10,
-    src: programa1,
-    alt: "Jiu-jitsu",
+    src: programa0,
+    alt: "Jiu Jitsu",
     category: "programas",
   },
-  {
+   {
     id: 11,
-    src: programa2,
-    alt: "Jiu-jitsu",
+    src: programa1,
+    alt: "Jiu Jitsu",
     category: "programas",
   },
-  {
+   {
     id: 12,
-    src: programa3,
-    alt: "Jiu-jitsu",
+    src: programa2,
+    alt: "Jiu Jitsu",
     category: "programas",
   },
-  {
+   {
     id: 13,
-    src: programa4,
-    alt: "Jiu-jitsu",
+    src: programa3,
+    alt: "Kickboxing",
     category: "programas",
   },
-  {
+   {
     id: 14,
-    src: programa5,
-    alt: "Jiu-jitsu",
-    category: "programas",
-  },
-  {
-    id: 15,
-    src: programa6,
-    alt: "Jiu-jitsu",
-    category: "programas",
-  },
-  {
-    id: 16,
-    src: programa7,
-    alt: "Jiu-jitsu",
-    category: "programas",
-  },
-  {
-    id: 17,
-    src: programa8,
-    alt: "Jiu-jitsu",
-    category: "programas",
-  },
-  {
-    id: 18,
-    src: programa9,
-    alt: "Jiu-jitsu",
+    src: programa4,
+    alt: "Kickboxing",
     category: "programas",
   },
   {

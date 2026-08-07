@@ -110,7 +110,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { Users, Music, Dumbbell, Heart, Trophy, Activity, Calendar, Clock, Maximize2, Download } from "lucide-react";
+import { Users, Music, Dumbbell, Heart, Trophy, Activity, Calendar, Clock, Maximize2, Download, PersonStanding } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 
@@ -125,6 +125,7 @@ export default function FeaturesSection() {
     { icon: Dumbbell, title: "Musculação", desc: "Treinos estruturados para ganho de massa, emagrecimento e fortalecimento muscular geral." },
     { icon: Activity, title: "IRON30", desc: "Circuitos dinâmicos de alta intensidade em 30 minutos. Máxima queima calórica." },
     { icon: Heart, title: "Capo&Vida", desc: "Metodologia exclusiva dedicada à saúde, mobilidade e longevidade de mulheres e idosos." },
+    { icon: PersonStanding, title: "Kickboxing", desc: "Treinamento dinâmico de socos e chutes para alta queima calórica, tonificação e defesa pessoal." },
   ];
 
   const containerVariants: Variants = {

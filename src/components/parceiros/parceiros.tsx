@@ -7,10 +7,9 @@ import { motion } from "framer-motion";
 import bf from "@/assets/images/parceiros/bf.jpg";
 import ievp from "@/assets/images/parceiros/ievp.jpg";
 import pincelmagico from "@/assets/images/parceiros/pincelmagico.jpg";
-import klebao from "@/assets/images/parceiros/klebao.jpg";
 import cnascimento from "@/assets/images/parceiros/colegionascimento.jpg";
 import lumnare from "@/assets/images/parceiros/lumnare.jpeg";
-import bjj from "@/assets/images/parceiros/bjj.jpeg";
+
 
 interface Sponsor {
   name: string;
@@ -22,10 +21,9 @@ const sponsors: Sponsor[] = [
   { name: "BF Gestão", src: bf },
   { name: "IEVP", src: ievp },
   { name: "Pincel Mágico", src: pincelmagico },
-  { name: "Klebão Loko", src: klebao },
   { name: "Colégio Nascimento", src: cnascimento },
   { name: "Lumare", src: lumnare },
-  { name: "BJJ", src: bjj }
+  
 ];
 
 export default function SponsorLogos() {

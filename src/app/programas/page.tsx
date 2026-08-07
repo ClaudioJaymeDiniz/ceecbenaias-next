@@ -12,6 +12,7 @@ import {
   Calendar,
   Sparkles,
   MessageSquare,
+  PersonStanding,
 } from "lucide-react";
 
 import Footer from "@/components/footer/footer";
@@ -128,6 +129,26 @@ const programas = [
       ],
     },
     imagem: "/musica.jpeg",
+  },
+ {
+    id: 8,
+    nome: "Kickboxing",
+    descricao:
+      "Treinamento dinâmico que combina técnicas de socos e chutes, unindo alto gasto calórico, tonificação muscular e defesa pessoal em aulas intensas e motivantes. Turmas mista e exclusiva para mulheres",
+    icone: PersonStanding,
+    detalhes: {
+      idade: "A partir de 7 anos",
+      duracao: "1h por aula",
+      frequencia: "2 a 3x por semana",
+      
+      beneficios: [
+        "Alta queima calórica",
+        "Resistência cardiorrespiratória",
+        "Defesa pessoal",
+        "Alívio do estresse",
+      ],
+    },
+    imagem: "/kickboxing.jpeg",
   },
 ];
 

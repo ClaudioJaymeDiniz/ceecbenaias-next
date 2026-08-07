@@ -153,7 +153,7 @@ export function GalleryGrid({ items, categories }: GalleryGridProps) {
               <ChevronRight size={32} />
             </Button>
 
-            {/* Indicador de paginação discreto na parte inferior (Útil para o Mobile) */}
+           
             <div className="absolute bottom-6 text-white/60 text-sm font-medium tracking-wider bg-white/5 px-4 py-1.5 rounded-full backdrop-blur-md">
               {currentIndex + 1} / {filteredItems.length}
             </div>
